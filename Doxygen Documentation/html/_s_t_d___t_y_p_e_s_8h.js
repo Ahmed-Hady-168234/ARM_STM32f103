@@ -1,5 +1,8 @@
 var _s_t_d___t_y_p_e_s_8h =
 [
+    [ "FALSE", "_s_t_d___t_y_p_e_s_8h.html#aa93f0eb578d23995850d61f7d61c55c1", null ],
+    [ "NULL", "_s_t_d___t_y_p_e_s_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4", null ],
+    [ "TRUE", "_s_t_d___t_y_p_e_s_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d", null ],
     [ "sint16", "_s_t_d___t_y_p_e_s_8h.html#a93192af54e4138a69b0416973055176b", null ],
     [ "sint32", "_s_t_d___t_y_p_e_s_8h.html#a0573de65958b4fda3a0460ed417dafb8", null ],
     [ "sint64", "_s_t_d___t_y_p_e_s_8h.html#a851dbc62b02256b86c59fc63d6414114", null ],

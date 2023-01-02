@@ -1,6 +1,10 @@
 <map id="01&#45;Lib/01&#45;STD_TYPES/STD_TYPES.h" name="01&#45;Lib/01&#45;STD_TYPES/STD_TYPES.h">
-<area shape="rect" id="node1" title=" " alt="" coords="191,5,346,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="565,5,719,47"/>
 <area shape="rect" id="node2" href="$_r_c_c__program_8c.html" title="This File contains the source code of the RCC Driver Functions for Target stm32f10x." alt="" coords="5,95,161,136"/>
 <area shape="rect" id="node3" href="$_g_p_i_o__program_8c.html" title="This File contains the source code of the GPIO Driver Functions for Target stm32f10x." alt="" coords="185,95,352,136"/>
-<area shape="rect" id="node4" href="$seven_segments_8c.html" title=" " alt="" coords="376,102,548,129"/>
+<area shape="rect" id="node4" href="$_n_v_i_c__program_8c.html" title="This File contains the source code of the NVIC Driver Functions for Target stm32f10x." alt="" coords="377,95,539,136"/>
+<area shape="rect" id="node5" href="$_e_x_t_i__program_8c.html" title="This File contains the source code of the EXTI Driver Functions for Target stm32f10x." alt="" coords="563,95,721,136"/>
+<area shape="rect" id="node6" href="$_a_f_i_o__program_8c.html" title="This File contains the source code of the AFIO Driver Functions for Target stm32f10x." alt="" coords="745,95,907,136"/>
+<area shape="rect" id="node7" href="$_sys_tick__program_8c.html" title="This File contains the source code of the SysTick Driver Functions for Target stm32f10x." alt="" coords="932,95,1077,136"/>
+<area shape="rect" id="node8" href="$seven_segments_8c.html" title=" " alt="" coords="1101,102,1273,129"/>
 </map>

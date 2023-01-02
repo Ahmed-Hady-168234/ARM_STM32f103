@@ -8,6 +8,13 @@
         "exti_interface.h": "c",
         "afio_private.h": "c",
         "afio_config.h": "c",
-        "exti_config.h": "c"
-    }
+        "exti_config.h": "c",
+        "systick_private.h": "c",
+        "systick_config.h": "c",
+        "systick_interface.h": "c"
+    },
+    "cSpell.words": [
+        "CALIB",
+        "Worng"
+    ]
 }
