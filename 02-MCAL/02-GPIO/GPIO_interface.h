@@ -76,5 +76,7 @@
 void GPIO_voidSetPinDirection(uint8 copy_u8PORT, uint8 copy_u8PIN, uint8 copy_u8Mode);
 void GPIO_voidSetPinValue(uint8 copy_u8PORT, uint8 copy_u8PIN, uint8 copy_u8Value);
 uint8 GPIO_voidGetPinValue(uint8 copy_u8PORT, uint8 copy_u8PIN);
+void GPIO_voidLockByPinNum(uint8 copy_u8PORT, uint8 copy_u8PIN);
+void GPIO_voidLockByPortMask(uint8 copy_u8PORT, uint32 copy_u8PortMask);
 
 #endif
