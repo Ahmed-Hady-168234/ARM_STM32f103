@@ -1,0 +1,4 @@
+<map id="MIR_u8GetData" name="MIR_u8GetData">
+<area shape="rect" id="node1" title="This function will be called after 1sec of the last falling edge (after the frame is sent)" alt="" coords="185,5,300,32"/>
+<area shape="rect" id="node2" href="$_i_r__interface_8h.html#ad2cd089c3335ebf42a4f18d05f62f1a8" title="This Function Just gets the frame and save it." alt="" coords="5,5,137,32"/>
+</map>

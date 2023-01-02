@@ -1,0 +1,4 @@
+<map id="SOS_voidSchedular" name="SOS_voidSchedular">
+<area shape="rect" id="node1" title="This is the Schedular Function it is called every TICK_TIME_IN_US to Run the task that has the turn." alt="" coords="160,5,297,32"/>
+<area shape="rect" id="node2" href="$_o_s__interface_8h.html#a1a57851e2a3703ab616d05b40062eee5" title="This Function Starts The OS." alt="" coords="5,5,112,32"/>
+</map>

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['mapr_416',['MAPR',['../struct_a_f_i_o__t.html#a7e0c674cbc5b873f1d53327683291fb5',1,'AFIO_t']]],
-  ['mapr2_417',['MAPR2',['../struct_a_f_i_o__t.html#a07a30fd02f8a8b7708131846c9839435',1,'AFIO_t']]]
+  ['global_5fu8releasedflag_572',['Global_u8ReleasedFlag',['../_l_e_d_m_r_x__private_8h.html#a76b298eac6ff8c980e2fc281592a48d2',1,'LEDMRX_private.h']]]
 ];

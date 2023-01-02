@@ -1,4 +1,5 @@
 <map id="MSysTick_voidStopInterval" name="MSysTick_voidStopInterval">
-<area shape="rect" id="node1" title="This Function Stops the Timer." alt="" coords="173,5,349,32"/>
-<area shape="rect" id="node2" href="$_sys_tick__program_8c.html#ab5e09814056d617c521549e542639b7e" title="This is the ISR... SysTick Interrupt Handler.. used to call the call back function,..." alt="" coords="5,5,125,32"/>
+<area shape="rect" id="node1" title="This Function Stops the Timer." alt="" coords="185,31,361,57"/>
+<area shape="rect" id="node2" href="$_i_r__interface_8h.html#ad2cd089c3335ebf42a4f18d05f62f1a8" title="This Function Just gets the frame and save it." alt="" coords="5,5,137,32"/>
+<area shape="rect" id="node3" href="$_sys_tick__program_8c.html#ab5e09814056d617c521549e542639b7e" title="This is the ISR... SysTick Interrupt Handler.. used to call the call back function,..." alt="" coords="11,56,131,83"/>
 </map>

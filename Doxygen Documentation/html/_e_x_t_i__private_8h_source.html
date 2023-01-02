@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Drivers: 02-MCAL/04_EXTI/EXTI_private.h Source File</title>
+<title>Drivers: 01-MCAL/04_EXTI/EXTI_private.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -97,41 +97,26 @@ $(document).ready(function(){initNavTree('_e_x_t_i__private_8h_source.html','');
 <div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="struct_e_x_t_i__t.html">   20</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span>{</div>
 <div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="struct_e_x_t_i__t.html#a3d8594f0800f3fc133e26c3037bae653">   21</a></span>&#160;    <span class="keyword">volatile</span> <a class="code" href="_s_t_d___t_y_p_e_s_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a> <a class="code" href="struct_e_x_t_i__t.html#a3d8594f0800f3fc133e26c3037bae653">IMR</a>;        <span class="comment">/*10.3.1 Interrupt mask register*/</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="struct_e_x_t_i__t.html#a4b33c9f5ab06531fe88b42a021eb094e">   22</a></span>&#160;    <span class="keyword">volatile</span> <a class="code" href="_s_t_d___t_y_p_e_s_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a> <a class="code" href="struct_e_x_t_i__t.html#a4b33c9f5ab06531fe88b42a021eb094e">EMR</a>;        <span class="comment">/*10.3.2 Event mask register*/</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="struct_e_x_t_i__t.html#a831f06b4fc3a2cf9c71236aa230d95ff">   23</a></span>&#160;    <span class="keyword">volatile</span> <a class="code" href="_s_t_d___t_y_p_e_s_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a> <a class="code" href="struct_e_x_t_i__t.html#a831f06b4fc3a2cf9c71236aa230d95ff">RTSR</a>;       <span class="comment">/*10.3.3 Rising trigger selection register*/</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="struct_e_x_t_i__t.html#add39f1b4b3868f40be17a18099f823c5">   24</a></span>&#160;    <span class="keyword">volatile</span> <a class="code" href="_s_t_d___t_y_p_e_s_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a> <a class="code" href="struct_e_x_t_i__t.html#add39f1b4b3868f40be17a18099f823c5">FTSR</a>;       <span class="comment">/*10.3.4 Falling trigger selection register*/</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="struct_e_x_t_i__t.html#a831f06b4fc3a2cf9c71236aa230d95ff">   23</a></span>&#160;    <span class="keyword">volatile</span> <a class="code" href="_s_t_d___t_y_p_e_s_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a> <a class="code" href="struct_e_x_t_i__t.html#a831f06b4fc3a2cf9c71236aa230d95ff">RTSR</a>;       <span class="comment">/*10.3.3 Rising trigger selection register(Enable/Disable Rising Edge)*/</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="struct_e_x_t_i__t.html#add39f1b4b3868f40be17a18099f823c5">   24</a></span>&#160;    <span class="keyword">volatile</span> <a class="code" href="_s_t_d___t_y_p_e_s_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a> <a class="code" href="struct_e_x_t_i__t.html#add39f1b4b3868f40be17a18099f823c5">FTSR</a>;       <span class="comment">/*10.3.4 Falling trigger selection register(Enable/Disable Falling Edge)*/</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="struct_e_x_t_i__t.html#a12e141793be86367f362208aa024c49b">   25</a></span>&#160;    <span class="keyword">volatile</span> <a class="code" href="_s_t_d___t_y_p_e_s_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a> <a class="code" href="struct_e_x_t_i__t.html#a12e141793be86367f362208aa024c49b">SWIER</a>;      <span class="comment">/*10.3.5 Software interrupt event register*/</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="struct_e_x_t_i__t.html#ace87a86bea8fd396f3a5c3088cc12e15">   26</a></span>&#160;    <span class="keyword">volatile</span> <a class="code" href="_s_t_d___t_y_p_e_s_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a> <a class="code" href="struct_e_x_t_i__t.html#ace87a86bea8fd396f3a5c3088cc12e15">PR</a>;         <span class="comment">/*10.3.6 Pending register*/</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}<a class="code" href="struct_e_x_t_i__t.html">EXTI_t</a>;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="_e_x_t_i__private_8h.html#a9189e770cd9b63dadd36683eb9843cac">   29</a></span>&#160;<span class="preprocessor">#define EXTI ((volatile EXTI_t*) 0x40010400)</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">/*CONFIGURATION External Interrupt Lines Macros for avoiding Magic Numbers*/</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="_e_x_t_i__private_8h.html#a5d9011faf4106bf40c74ff617b1e4973">   32</a></span>&#160;<span class="preprocessor">#define     EXTI_LINE0      0</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="_e_x_t_i__private_8h.html#aaba6df92e2a71ffd93baec85cd0f9e89">   33</a></span>&#160;<span class="preprocessor">#define     EXTI_LINE1      1</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="_e_x_t_i__private_8h.html#aa2510982e59ba9c313eada9cdc76aa08">   34</a></span>&#160;<span class="preprocessor">#define     EXTI_LINE2      2</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="_e_x_t_i__private_8h.html#a9534db63b2c5e59646d415e13325c028">   35</a></span>&#160;<span class="preprocessor">#define     EXTI_LINE3      3</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="_e_x_t_i__private_8h.html#a148019fb5e5bbf3dbb6cc5eb74541df0">   36</a></span>&#160;<span class="preprocessor">#define     EXTI_LINE4      4</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="_e_x_t_i__private_8h.html#a11145270abb9a3d184bb9d8b00014cec">   37</a></span>&#160;<span class="preprocessor">#define     EXTI_LINE5      5</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="_e_x_t_i__private_8h.html#afc75ecdd4cf7265d434f18320fb874ad">   38</a></span>&#160;<span class="preprocessor">#define     EXTI_LINE6      6</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="_e_x_t_i__private_8h.html#a0d7c89e4fe627f9dc4e59d08820906d4">   39</a></span>&#160;<span class="preprocessor">#define     EXTI_LINE7      7</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="_e_x_t_i__private_8h.html#a7c137e2f2a8f478cbad351fa412694ad">   40</a></span>&#160;<span class="preprocessor">#define     EXTI_LINE8      8</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="_e_x_t_i__private_8h.html#ab01e9777448076d5db8b9e3a02681f8a">   41</a></span>&#160;<span class="preprocessor">#define     EXTI_LINE9      9</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="_e_x_t_i__private_8h.html#a62fc344e22f30467a6dcdeab42908fd3">   42</a></span>&#160;<span class="preprocessor">#define     EXTI_LINE10     10</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="_e_x_t_i__private_8h.html#a8d4c2f6a70a983e971c933f507e3309d">   43</a></span>&#160;<span class="preprocessor">#define     EXTI_LINE11     11</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="_e_x_t_i__private_8h.html#a36a546d69360530ca0345f0d0a15e7ae">   44</a></span>&#160;<span class="preprocessor">#define     EXTI_LINE12     12</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="_e_x_t_i__private_8h.html#aa8ef9ed6d2e5b5fd2eb5aad1e89bcfb3">   45</a></span>&#160;<span class="preprocessor">#define     EXTI_LINE13     13</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="_e_x_t_i__private_8h.html#a6b1c5fb1dac595296b9aeed7744d486c">   46</a></span>&#160;<span class="preprocessor">#define     EXTI_LINE14     14</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="_e_x_t_i__private_8h.html#a373c9155ecf4572de295940c612b2f49">   47</a></span>&#160;<span class="preprocessor">#define     EXTI_LINE15     15</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">/*CONFIGURATION External interrupt Modes*/</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="_e_x_t_i__private_8h.html#a16a637a83d1ad455391b764a2e64d556">   50</a></span>&#160;<span class="preprocessor">#define EXTI_RISING_MODE        0</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="_e_x_t_i__private_8h.html#a05fee4a5c4afbc9a550e0feef700de24">   51</a></span>&#160;<span class="preprocessor">#define EXTI_FALLING_MODE       1</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="_e_x_t_i__private_8h.html#ad9dcc9586bf3f5d6c3b652df8c6a0369">   52</a></span>&#160;<span class="preprocessor">#define EXTI_ON_CHANGE_MODE     2</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="a_s_t_d___t_y_p_e_s_8h_html_a1134b580f8da4de94ca6b1de4d37975e"><div class="ttname"><a href="_s_t_d___t_y_p_e_s_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a></div><div class="ttdeci">unsigned int uint32</div><div class="ttdef"><b>Definition:</b> STD_TYPES.h:18</div></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">/*No Derefrence */</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="_e_x_t_i__private_8h.html#a9189e770cd9b63dadd36683eb9843cac">   30</a></span>&#160;<span class="preprocessor">#define EXTI ((volatile EXTI_t*) 0x40010400)</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">/*CONFIGURATION External interrupt Modes*/</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="_e_x_t_i__private_8h.html#a16a637a83d1ad455391b764a2e64d556">   35</a></span>&#160;<span class="preprocessor">#define EXTI_RISING_MODE        1</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="_e_x_t_i__private_8h.html#a05fee4a5c4afbc9a550e0feef700de24">   36</a></span>&#160;<span class="preprocessor">#define EXTI_FALLING_MODE       3</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="_e_x_t_i__private_8h.html#ad9dcc9586bf3f5d6c3b652df8c6a0369">   37</a></span>&#160;<span class="preprocessor">#define EXTI_ON_CHANGE_MODE     5</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a_s_t_d___t_y_p_e_s_8h_html_a1134b580f8da4de94ca6b1de4d37975e"><div class="ttname"><a href="_s_t_d___t_y_p_e_s_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a></div><div class="ttdeci">unsigned int uint32</div><div class="ttdef"><b>Definition:</b> STD_TYPES.h:17</div></div>
 <div class="ttc" id="astruct_e_x_t_i__t_html"><div class="ttname"><a href="struct_e_x_t_i__t.html">EXTI_t</a></div><div class="ttdef"><b>Definition:</b> EXTI_private.h:20</div></div>
 <div class="ttc" id="astruct_e_x_t_i__t_html_a12e141793be86367f362208aa024c49b"><div class="ttname"><a href="struct_e_x_t_i__t.html#a12e141793be86367f362208aa024c49b">EXTI_t::SWIER</a></div><div class="ttdeci">volatile uint32 SWIER</div><div class="ttdef"><b>Definition:</b> EXTI_private.h:25</div></div>
 <div class="ttc" id="astruct_e_x_t_i__t_html_a3d8594f0800f3fc133e26c3037bae653"><div class="ttname"><a href="struct_e_x_t_i__t.html#a3d8594f0800f3fc133e26c3037bae653">EXTI_t::IMR</a></div><div class="ttdeci">volatile uint32 IMR</div><div class="ttdef"><b>Definition:</b> EXTI_private.h:21</div></div>
@@ -144,7 +129,7 @@ $(document).ready(function(){initNavTree('_e_x_t_i__private_8h_source.html','');
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_ead4d19c350ebd6941e0b59c8918c859.html">02-MCAL</a></li><li class="navelem"><a class="el" href="dir_c2eeced5e8aadf59fb01d4f38e2b4b1d.html">04_EXTI</a></li><li class="navelem"><a class="el" href="_e_x_t_i__private_8h.html">EXTI_private.h</a></li>
+    <li class="navelem"><a class="el" href="dir_f6f0614a7d71f97572a22fb0b5b058ce.html">01-MCAL</a></li><li class="navelem"><a class="el" href="dir_ca81b12d2bd6a8fe0a9bd410747bce96.html">04_EXTI</a></li><li class="navelem"><a class="el" href="_e_x_t_i__private_8h.html">EXTI_private.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

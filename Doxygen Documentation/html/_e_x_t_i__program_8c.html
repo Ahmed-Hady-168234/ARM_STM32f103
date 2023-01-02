@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Drivers: 02-MCAL/04_EXTI/EXTI_program.c File Reference</title>
+<title>Drivers: 01-MCAL/04_EXTI/EXTI_program.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -83,7 +83,8 @@ $(document).ready(function(){initNavTree('_e_x_t_i__program_8c.html',''); initRe
 
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">EXTI_program.c File Reference</div>  </div>
 </div><!--header-->
@@ -99,7 +100,15 @@ $(document).ready(function(){initNavTree('_e_x_t_i__program_8c.html',''); initRe
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for EXTI_program.c:</div>
 <div class="dyncontent">
-<div class="center"><img src="_e_x_t_i__program_8c__incl.png" border="0" usemap="#a02-_m_c_a_l_204___e_x_t_i_2_e_x_t_i__program_8c" alt=""/></div>
+<div class="center"><img src="_e_x_t_i__program_8c__incl.png" border="0" usemap="#a01-_m_c_a_l_204___e_x_t_i_2_e_x_t_i__program_8c" alt=""/></div>
+<map name="a01-_m_c_a_l_204___e_x_t_i_2_e_x_t_i__program_8c" id="a01-_m_c_a_l_204___e_x_t_i_2_e_x_t_i__program_8c">
+<area shape="rect" title="This File contains the source code of the EXTI Driver Functions for Target stm32f10x." alt="" coords="235,5,393,47"/>
+<area shape="rect" href="_s_t_d___t_y_p_e_s_8h.html" title=" " alt="" coords="5,95,113,121"/>
+<area shape="rect" href="_b_i_t___m_a_t_h_8h.html" title=" " alt="" coords="137,95,232,121"/>
+<area shape="rect" href="_e_x_t_i__interface_8h.html" title="This file contains the function headers and the macros for the EXTI Driver that the User can see and ..." alt="" coords="257,95,371,121"/>
+<area shape="rect" href="_e_x_t_i___config_8h.html" title="This file contains the Configuration for the EXTI Driver(User Should see and modify if needed)" alt="" coords="396,95,499,121"/>
+<area shape="rect" href="_e_x_t_i__private_8h.html" title="This file contains the Registers and the macros for the EXTI Driver the User shouldn&#39;t see this." alt="" coords="523,95,625,121"/>
+</map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -119,14 +128,390 @@ Functions</h2></td></tr>
 <tr class="memitem:a018881a4d37b8f9ff39d426e2a73b1f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_e_x_t_i__program_8c.html#a018881a4d37b8f9ff39d426e2a73b1f1">MEXTI_voidSetSignalLatch</a> (<a class="el" href="_s_t_d___t_y_p_e_s_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> Copy_u8Line, <a class="el" href="_s_t_d___t_y_p_e_s_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> Copy_u8ExtiMode)</td></tr>
 <tr class="memdesc:a018881a4d37b8f9ff39d426e2a73b1f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">This Function Enables the required line External interrupt.  <a href="_e_x_t_i__program_8c.html#a018881a4d37b8f9ff39d426e2a73b1f1">More...</a><br /></td></tr>
 <tr class="separator:a018881a4d37b8f9ff39d426e2a73b1f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bf687f3b30147174233b8c22352c97b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_e_x_t_i__program_8c.html#a1bf687f3b30147174233b8c22352c97b">MEXTI_voidSetSetCallBack</a> (<a class="el" href="_s_t_d___t_y_p_e_s_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> Copy_u8Line, void(*Copy_voidPtr)(void))</td></tr>
+<tr class="memdesc:a1bf687f3b30147174233b8c22352c97b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function Sets The Call Back Function.  <a href="_e_x_t_i__program_8c.html#a1bf687f3b30147174233b8c22352c97b">More...</a><br /></td></tr>
+<tr class="separator:a1bf687f3b30147174233b8c22352c97b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17e9789a29a87d2df54f12b94dd1a0b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_e_x_t_i__program_8c.html#a17e9789a29a87d2df54f12b94dd1a0b6">EXTI0_IRQHandler</a> (void)</td></tr>
+<tr class="memdesc:a17e9789a29a87d2df54f12b94dd1a0b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the ISR... SysTick Interrupt Handler.. used to call the call back function, used in side this file only.  <a href="_e_x_t_i__program_8c.html#a17e9789a29a87d2df54f12b94dd1a0b6">More...</a><br /></td></tr>
+<tr class="separator:a17e9789a29a87d2df54f12b94dd1a0b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49cfdd46eb8d0ef3e1987514aa9343dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_e_x_t_i__program_8c.html#a49cfdd46eb8d0ef3e1987514aa9343dc">EXTI1_IRQHandler</a> (void)</td></tr>
+<tr class="memdesc:a49cfdd46eb8d0ef3e1987514aa9343dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the ISR... SysTick Interrupt Handler.. used to call the call back function, used in side this file only.  <a href="_e_x_t_i__program_8c.html#a49cfdd46eb8d0ef3e1987514aa9343dc">More...</a><br /></td></tr>
+<tr class="separator:a49cfdd46eb8d0ef3e1987514aa9343dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5a1d9e9c8ef50e0cb9ddb5745a20a14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_e_x_t_i__program_8c.html#ab5a1d9e9c8ef50e0cb9ddb5745a20a14">EXTI2_IRQHandler</a> (void)</td></tr>
+<tr class="memdesc:ab5a1d9e9c8ef50e0cb9ddb5745a20a14"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the ISR... SysTick Interrupt Handler.. used to call the call back function, used in side this file only.  <a href="_e_x_t_i__program_8c.html#ab5a1d9e9c8ef50e0cb9ddb5745a20a14">More...</a><br /></td></tr>
+<tr class="separator:ab5a1d9e9c8ef50e0cb9ddb5745a20a14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30c045de96d18ec9c67a7b9e4350920f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_e_x_t_i__program_8c.html#a30c045de96d18ec9c67a7b9e4350920f">EXTI3_IRQHandler</a> (void)</td></tr>
+<tr class="memdesc:a30c045de96d18ec9c67a7b9e4350920f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the ISR... SysTick Interrupt Handler.. used to call the call back function, used in side this file only.  <a href="_e_x_t_i__program_8c.html#a30c045de96d18ec9c67a7b9e4350920f">More...</a><br /></td></tr>
+<tr class="separator:a30c045de96d18ec9c67a7b9e4350920f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a290cb997018c8d85d4b965b4a242842f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_e_x_t_i__program_8c.html#a290cb997018c8d85d4b965b4a242842f">EXTI4_IRQHandler</a> (void)</td></tr>
+<tr class="memdesc:a290cb997018c8d85d4b965b4a242842f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the ISR... SysTick Interrupt Handler.. used to call the call back function, used in side this file only.  <a href="_e_x_t_i__program_8c.html#a290cb997018c8d85d4b965b4a242842f">More...</a><br /></td></tr>
+<tr class="separator:a290cb997018c8d85d4b965b4a242842f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59dda78e102f6a3176b6abf8b165988f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_e_x_t_i__program_8c.html#a59dda78e102f6a3176b6abf8b165988f">EXTI5_IRQHandler</a> (void)</td></tr>
+<tr class="memdesc:a59dda78e102f6a3176b6abf8b165988f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the ISR... SysTick Interrupt Handler.. used to call the call back function, used in side this file only.  <a href="_e_x_t_i__program_8c.html#a59dda78e102f6a3176b6abf8b165988f">More...</a><br /></td></tr>
+<tr class="separator:a59dda78e102f6a3176b6abf8b165988f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fba51e2ee92bba260af35f46d7cbeaa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_e_x_t_i__program_8c.html#a9fba51e2ee92bba260af35f46d7cbeaa">EXTI6_IRQHandler</a> (void)</td></tr>
+<tr class="memdesc:a9fba51e2ee92bba260af35f46d7cbeaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the ISR... SysTick Interrupt Handler.. used to call the call back function, used in side this file only.  <a href="_e_x_t_i__program_8c.html#a9fba51e2ee92bba260af35f46d7cbeaa">More...</a><br /></td></tr>
+<tr class="separator:a9fba51e2ee92bba260af35f46d7cbeaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6298abcaeb581434c742853ca686ee64"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_e_x_t_i__program_8c.html#a6298abcaeb581434c742853ca686ee64">EXTI7_IRQHandler</a> (void)</td></tr>
+<tr class="memdesc:a6298abcaeb581434c742853ca686ee64"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the ISR... SysTick Interrupt Handler.. used to call the call back function, used in side this file only.  <a href="_e_x_t_i__program_8c.html#a6298abcaeb581434c742853ca686ee64">More...</a><br /></td></tr>
+<tr class="separator:a6298abcaeb581434c742853ca686ee64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af306185660ce4c4ff5b89398916f26ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_e_x_t_i__program_8c.html#af306185660ce4c4ff5b89398916f26ef">EXTI8_IRQHandler</a> (void)</td></tr>
+<tr class="memdesc:af306185660ce4c4ff5b89398916f26ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the ISR... SysTick Interrupt Handler.. used to call the call back function, used in side this file only.  <a href="_e_x_t_i__program_8c.html#af306185660ce4c4ff5b89398916f26ef">More...</a><br /></td></tr>
+<tr class="separator:af306185660ce4c4ff5b89398916f26ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9204c7bbc0627cfd3b77a29f429fd0bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_e_x_t_i__program_8c.html#a9204c7bbc0627cfd3b77a29f429fd0bf">EXTI9_IRQHandler</a> (void)</td></tr>
+<tr class="memdesc:a9204c7bbc0627cfd3b77a29f429fd0bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the ISR... SysTick Interrupt Handler.. used to call the call back function, used in side this file only.  <a href="_e_x_t_i__program_8c.html#a9204c7bbc0627cfd3b77a29f429fd0bf">More...</a><br /></td></tr>
+<tr class="separator:a9204c7bbc0627cfd3b77a29f429fd0bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8609e468da42d56c0c7cc98751793eac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_e_x_t_i__program_8c.html#a8609e468da42d56c0c7cc98751793eac">EXTI10_IRQHandler</a> (void)</td></tr>
+<tr class="memdesc:a8609e468da42d56c0c7cc98751793eac"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the ISR... SysTick Interrupt Handler.. used to call the call back function, used in side this file only.  <a href="_e_x_t_i__program_8c.html#a8609e468da42d56c0c7cc98751793eac">More...</a><br /></td></tr>
+<tr class="separator:a8609e468da42d56c0c7cc98751793eac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7168021635557af388f834796109797e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_e_x_t_i__program_8c.html#a7168021635557af388f834796109797e">EXTI11_IRQHandler</a> (void)</td></tr>
+<tr class="memdesc:a7168021635557af388f834796109797e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the ISR... SysTick Interrupt Handler.. used to call the call back function, used in side this file only.  <a href="_e_x_t_i__program_8c.html#a7168021635557af388f834796109797e">More...</a><br /></td></tr>
+<tr class="separator:a7168021635557af388f834796109797e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad223df7a6e18784d7aa64456b668278b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_e_x_t_i__program_8c.html#ad223df7a6e18784d7aa64456b668278b">EXTI12_IRQHandler</a> (void)</td></tr>
+<tr class="memdesc:ad223df7a6e18784d7aa64456b668278b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the ISR... SysTick Interrupt Handler.. used to call the call back function, used in side this file only.  <a href="_e_x_t_i__program_8c.html#ad223df7a6e18784d7aa64456b668278b">More...</a><br /></td></tr>
+<tr class="separator:ad223df7a6e18784d7aa64456b668278b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5ef9a516d8fa549af65f4deb48dbc7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_e_x_t_i__program_8c.html#aa5ef9a516d8fa549af65f4deb48dbc7b">EXTI13_IRQHandler</a> (void)</td></tr>
+<tr class="memdesc:aa5ef9a516d8fa549af65f4deb48dbc7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the ISR... SysTick Interrupt Handler.. used to call the call back function, used in side this file only.  <a href="_e_x_t_i__program_8c.html#aa5ef9a516d8fa549af65f4deb48dbc7b">More...</a><br /></td></tr>
+<tr class="separator:aa5ef9a516d8fa549af65f4deb48dbc7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a733c23a7dc04c0eeff4bf9478e069b53"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_e_x_t_i__program_8c.html#a733c23a7dc04c0eeff4bf9478e069b53">EXTI14_IRQHandler</a> (void)</td></tr>
+<tr class="memdesc:a733c23a7dc04c0eeff4bf9478e069b53"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the ISR... SysTick Interrupt Handler.. used to call the call back function, used in side this file only.  <a href="_e_x_t_i__program_8c.html#a733c23a7dc04c0eeff4bf9478e069b53">More...</a><br /></td></tr>
+<tr class="separator:a733c23a7dc04c0eeff4bf9478e069b53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ebf619d09a471daff82c83d6331aa1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_e_x_t_i__program_8c.html#a9ebf619d09a471daff82c83d6331aa1d">EXTI15_IRQHandler</a> (void)</td></tr>
+<tr class="memdesc:a9ebf619d09a471daff82c83d6331aa1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the ISR... SysTick Interrupt Handler.. used to call the call back function, used in side this file only.  <a href="_e_x_t_i__program_8c.html#a9ebf619d09a471daff82c83d6331aa1d">More...</a><br /></td></tr>
+<tr class="separator:a9ebf619d09a471daff82c83d6331aa1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a2d1e2e1bf94b556a79a93892db637c77"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_e_x_t_i__program_8c.html#a2d1e2e1bf94b556a79a93892db637c77">CallBackFunc</a> [<a class="el" href="_e_x_t_i__interface_8h.html#a0968db149225f2a5519c41ba642d8633">MAXIMUM_LINES_NUMBER</a>])(void) = {<a class="el" href="_s_t_d___t_y_p_e_s_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>}</td></tr>
+<tr class="separator:a2d1e2e1bf94b556a79a93892db637c77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This File contains the source code of the EXTI Driver Functions for Target stm32f10x. </p>
 <dl class="section author"><dt>Author</dt><dd>Ahmed Hady (<a href="#" onclick="location.href='mai'+'lto:'+'ahm'+'ed'+'168'+'23'+'4@g'+'ma'+'il.'+'co'+'m'; return false;">ahmed<span style="display: none;">.nosp@m.</span>1682<span style="display: none;">.nosp@m.</span>34@gm<span style="display: none;">.nosp@m.</span>ail.<span style="display: none;">.nosp@m.</span>com</a>) </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>V01 </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>2022-07-23 </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>V02</dd></dl>
+<p>Adding <a class="el" href="_e_x_t_i__program_8c.html#a1bf687f3b30147174233b8c22352c97b" title="This function Sets The Call Back Function.">MEXTI_voidSetSetCallBack()</a> Function </p><dl class="section date"><dt>Date</dt><dd>2022-08-03 </dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2022 </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="a17e9789a29a87d2df54f12b94dd1a0b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17e9789a29a87d2df54f12b94dd1a0b6">&#9670;&nbsp;</a></span>EXTI0_IRQHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EXTI0_IRQHandler </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is the ISR... SysTick Interrupt Handler.. used to call the call back function, used in side this file only. </p>
+
+</div>
+</div>
+<a id="a8609e468da42d56c0c7cc98751793eac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8609e468da42d56c0c7cc98751793eac">&#9670;&nbsp;</a></span>EXTI10_IRQHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EXTI10_IRQHandler </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is the ISR... SysTick Interrupt Handler.. used to call the call back function, used in side this file only. </p>
+
+</div>
+</div>
+<a id="a7168021635557af388f834796109797e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7168021635557af388f834796109797e">&#9670;&nbsp;</a></span>EXTI11_IRQHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EXTI11_IRQHandler </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is the ISR... SysTick Interrupt Handler.. used to call the call back function, used in side this file only. </p>
+
+</div>
+</div>
+<a id="ad223df7a6e18784d7aa64456b668278b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad223df7a6e18784d7aa64456b668278b">&#9670;&nbsp;</a></span>EXTI12_IRQHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EXTI12_IRQHandler </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is the ISR... SysTick Interrupt Handler.. used to call the call back function, used in side this file only. </p>
+
+</div>
+</div>
+<a id="aa5ef9a516d8fa549af65f4deb48dbc7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5ef9a516d8fa549af65f4deb48dbc7b">&#9670;&nbsp;</a></span>EXTI13_IRQHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EXTI13_IRQHandler </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is the ISR... SysTick Interrupt Handler.. used to call the call back function, used in side this file only. </p>
+
+</div>
+</div>
+<a id="a733c23a7dc04c0eeff4bf9478e069b53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a733c23a7dc04c0eeff4bf9478e069b53">&#9670;&nbsp;</a></span>EXTI14_IRQHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EXTI14_IRQHandler </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is the ISR... SysTick Interrupt Handler.. used to call the call back function, used in side this file only. </p>
+
+</div>
+</div>
+<a id="a9ebf619d09a471daff82c83d6331aa1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ebf619d09a471daff82c83d6331aa1d">&#9670;&nbsp;</a></span>EXTI15_IRQHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EXTI15_IRQHandler </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is the ISR... SysTick Interrupt Handler.. used to call the call back function, used in side this file only. </p>
+
+</div>
+</div>
+<a id="a49cfdd46eb8d0ef3e1987514aa9343dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49cfdd46eb8d0ef3e1987514aa9343dc">&#9670;&nbsp;</a></span>EXTI1_IRQHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EXTI1_IRQHandler </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is the ISR... SysTick Interrupt Handler.. used to call the call back function, used in side this file only. </p>
+
+</div>
+</div>
+<a id="ab5a1d9e9c8ef50e0cb9ddb5745a20a14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5a1d9e9c8ef50e0cb9ddb5745a20a14">&#9670;&nbsp;</a></span>EXTI2_IRQHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EXTI2_IRQHandler </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is the ISR... SysTick Interrupt Handler.. used to call the call back function, used in side this file only. </p>
+
+</div>
+</div>
+<a id="a30c045de96d18ec9c67a7b9e4350920f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30c045de96d18ec9c67a7b9e4350920f">&#9670;&nbsp;</a></span>EXTI3_IRQHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EXTI3_IRQHandler </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is the ISR... SysTick Interrupt Handler.. used to call the call back function, used in side this file only. </p>
+
+</div>
+</div>
+<a id="a290cb997018c8d85d4b965b4a242842f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a290cb997018c8d85d4b965b4a242842f">&#9670;&nbsp;</a></span>EXTI4_IRQHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EXTI4_IRQHandler </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is the ISR... SysTick Interrupt Handler.. used to call the call back function, used in side this file only. </p>
+
+</div>
+</div>
+<a id="a59dda78e102f6a3176b6abf8b165988f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59dda78e102f6a3176b6abf8b165988f">&#9670;&nbsp;</a></span>EXTI5_IRQHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EXTI5_IRQHandler </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is the ISR... SysTick Interrupt Handler.. used to call the call back function, used in side this file only. </p>
+
+</div>
+</div>
+<a id="a9fba51e2ee92bba260af35f46d7cbeaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fba51e2ee92bba260af35f46d7cbeaa">&#9670;&nbsp;</a></span>EXTI6_IRQHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EXTI6_IRQHandler </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is the ISR... SysTick Interrupt Handler.. used to call the call back function, used in side this file only. </p>
+
+</div>
+</div>
+<a id="a6298abcaeb581434c742853ca686ee64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6298abcaeb581434c742853ca686ee64">&#9670;&nbsp;</a></span>EXTI7_IRQHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EXTI7_IRQHandler </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is the ISR... SysTick Interrupt Handler.. used to call the call back function, used in side this file only. </p>
+
+</div>
+</div>
+<a id="af306185660ce4c4ff5b89398916f26ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af306185660ce4c4ff5b89398916f26ef">&#9670;&nbsp;</a></span>EXTI8_IRQHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EXTI8_IRQHandler </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is the ISR... SysTick Interrupt Handler.. used to call the call back function, used in side this file only. </p>
+
+</div>
+</div>
+<a id="a9204c7bbc0627cfd3b77a29f429fd0bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9204c7bbc0627cfd3b77a29f429fd0bf">&#9670;&nbsp;</a></span>EXTI9_IRQHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EXTI9_IRQHandler </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is the ISR... SysTick Interrupt Handler.. used to call the call back function, used in side this file only. </p>
+
+</div>
+</div>
 <a id="ad6ec5b3de0b4f7948bcad71f144ff964"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad6ec5b3de0b4f7948bcad71f144ff964">&#9670;&nbsp;</a></span>MEXTI_voidDisableEXTI()</h2>
 
@@ -202,6 +587,42 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a1bf687f3b30147174233b8c22352c97b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bf687f3b30147174233b8c22352c97b">&#9670;&nbsp;</a></span>MEXTI_voidSetSetCallBack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MEXTI_voidSetSetCallBack </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_s_t_d___t_y_p_e_s_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a>&#160;</td>
+          <td class="paramname"><em>Copy_u8Line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(*)(void)&#160;</td>
+          <td class="paramname"><em>Copy_voidPtr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function Sets The Call Back Function. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Copy_ptr</td><td>Pointer to function.. a call back function to the required function to run when the timer is done </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a018881a4d37b8f9ff39d426e2a73b1f1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a018881a4d37b8f9ff39d426e2a73b1f1">&#9670;&nbsp;</a></span>MEXTI_voidSetSignalLatch()</h2>
 
@@ -236,7 +657,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd>You Should call <a class="el" href="_e_x_t_i__program_8c.html#a2152cba1ac267aa6c5d75fcac8c6db13" title="This the Initialization Function for EXTI Driver.">MEXTI_voidInit()</a> before calling this function</dd></dl>
-<p>used to change mode for specific line in run time</p>
+<p>Used to change mode for specific line in run time</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">Copy_u8Line</td><td>The Line number ( from 0 to MAXIMUM_LINES_NUMBER) </td></tr>
@@ -250,7 +671,6 @@ options:
   </table>
   </dd>
 </dl>
-<dl class="section pre"><dt>Precondition</dt><dd>You Should call <a class="el" href="_e_x_t_i__program_8c.html#a2152cba1ac267aa6c5d75fcac8c6db13" title="This the Initialization Function for EXTI Driver.">MEXTI_voidInit()</a> before calling this function </dd></dl>
 
 </div>
 </div>
@@ -274,11 +694,30 @@ options:
 <p>Creates an SW interrupt by setting the corresponding interrupt bit pending flag</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">Copy_u8Line</td><td>The line number </td></tr>
+    <tr><td class="paramname">Copy_u8Line</td><td>The line number (Shouldn't Exceed MAXIMUM_LINES_NUMBER) </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd>You Should call <a class="el" href="_e_x_t_i__program_8c.html#a2152cba1ac267aa6c5d75fcac8c6db13" title="This the Initialization Function for EXTI Driver.">MEXTI_voidInit()</a> </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a2d1e2e1bf94b556a79a93892db637c77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d1e2e1bf94b556a79a93892db637c77">&#9670;&nbsp;</a></span>CallBackFunc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* CallBackFunc[<a class="el" href="_e_x_t_i__interface_8h.html#a0968db149225f2a5519c41ba642d8633">MAXIMUM_LINES_NUMBER</a>])(void) </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> = {<a class="el" href="_s_t_d___t_y_p_e_s_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -287,7 +726,7 @@ options:
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_ead4d19c350ebd6941e0b59c8918c859.html">02-MCAL</a></li><li class="navelem"><a class="el" href="dir_c2eeced5e8aadf59fb01d4f38e2b4b1d.html">04_EXTI</a></li><li class="navelem"><a class="el" href="_e_x_t_i__program_8c.html">EXTI_program.c</a></li>
+    <li class="navelem"><a class="el" href="dir_f6f0614a7d71f97572a22fb0b5b058ce.html">01-MCAL</a></li><li class="navelem"><a class="el" href="dir_ca81b12d2bd6a8fe0a9bd410747bce96.html">04_EXTI</a></li><li class="navelem"><a class="el" href="_e_x_t_i__program_8c.html">EXTI_program.c</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

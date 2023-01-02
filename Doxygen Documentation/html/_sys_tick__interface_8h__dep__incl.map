@@ -1,4 +1,7 @@
-<map id="02&#45;MCAL/06&#45;SysTick/SysTick_interface.h" name="02&#45;MCAL/06&#45;SysTick/SysTick_interface.h">
-<area shape="rect" id="node1" title="This file contains the function headers and the macros for the SysTick Driver that the User can see a..." alt="" coords="5,5,151,47"/>
+<map id="01&#45;MCAL/06&#45;SysTick/SysTick_interface.h" name="01&#45;MCAL/06&#45;SysTick/SysTick_interface.h">
+<area shape="rect" id="node1" title="This file contains the function headers and the macros for the SysTick Driver that the User can see a..." alt="" coords="309,5,455,47"/>
 <area shape="rect" id="node2" href="$_sys_tick__program_8c.html" title="This File contains the source code of the SysTick Driver Functions for Target stm32f10x." alt="" coords="5,95,151,136"/>
+<area shape="rect" id="node3" href="$_l_e_d_m_r_x__program_8c.html" title="This File contains the source code of the LEDMRX Driver Functions for Target stm32f10x." alt="" coords="175,95,373,136"/>
+<area shape="rect" id="node4" href="$_i_r__program_8c.html" title="This File contains the source code of the IR Driver Functions for Target stm32f10x." alt="" coords="397,102,585,129"/>
+<area shape="rect" id="node5" href="$_o_s__program_8c.html" title=" " alt="" coords="609,95,763,136"/>
 </map>

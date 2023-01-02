@@ -1,0 +1,5 @@
+<map id="MSysTick_voidSetBusyWait" name="MSysTick_voidSetBusyWait">
+<area shape="rect" id="node1" title="This Function acts like function dealy(), it waits(Stucks) till the ticks finishes." alt="" coords="280,31,467,57"/>
+<area shape="rect" id="node2" href="$_l_e_d_m_r_x__interface_8h.html#ade385ef9522323a596e08d584cc7efcf" title="This function Displays a char." alt="" coords="27,5,210,32"/>
+<area shape="rect" id="node3" href="$_l_e_d_m_r_x__interface_8h.html#ac45fe043f03bdde0cf76be0053b61753" title="This function Displays a word, char by char .. moving from left to right." alt="" coords="5,56,232,83"/>
+</map>

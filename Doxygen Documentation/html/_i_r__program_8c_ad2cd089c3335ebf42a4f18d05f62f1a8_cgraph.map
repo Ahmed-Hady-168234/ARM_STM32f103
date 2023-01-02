@@ -1,0 +1,7 @@
+<map id="MIR_voidGetFrame" name="MIR_voidGetFrame">
+<area shape="rect" id="node1" title="This Function Just gets the frame and save it." alt="" coords="5,85,137,112"/>
+<area shape="rect" id="node2" href="$_i_r__program_8c.html#a78329ff5c34e4c98dcd42c8e35f80f92" title="This function will be called after 1sec of the last falling edge (after the frame is sent)" alt="" coords="230,5,345,32"/>
+<area shape="rect" id="node3" href="$_sys_tick__interface_8h.html#ac2352547ff8282e0ef840d1f789576d2" title="This Function gets the Elapsed Time (total time minus the remaining time)" alt="" coords="185,56,389,83"/>
+<area shape="rect" id="node4" href="$_sys_tick__interface_8h.html#a30cd58b5298b28f97bc364191085e8a4" title="This Function Sets a timer for one time call back the functions when the timer is done." alt="" coords="203,107,372,149"/>
+<area shape="rect" id="node5" href="$_sys_tick__interface_8h.html#a4172e9106a7a8dc5a5bd0337afd54866" title="This Function Stops the Timer." alt="" coords="199,173,375,200"/>
+</map>

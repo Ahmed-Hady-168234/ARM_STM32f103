@@ -1,4 +1,4 @@
 <map id="GPIO_voidSetPinDirection" name="GPIO_voidSetPinDirection">
-<area shape="rect" id="node1" title="This Function Sets the Pin Mode." alt="" coords="104,5,277,32"/>
-<area shape="rect" id="node2" href="$main_8c.html#a6288eba0f8e8ad3ab1544ad731eb7667" title=" " alt="" coords="5,5,56,32"/>
+<area shape="rect" id="node1" title="This Function Sets the Pin Mode." alt="" coords="183,5,356,32"/>
+<area shape="rect" id="node2" href="$_l_e_d_m_r_x__interface_8h.html#acd2c64c0c13cfa310c182cd6cfa931f5" title="Initialization of the driver." alt="" coords="5,5,135,32"/>
 </map>

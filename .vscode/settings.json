@@ -19,7 +19,10 @@
         "rcc_config.h": "c",
         "ledmrx_config.h": "c",
         "ir_interface.h": "c",
-        "ir_private.h": "c"
+        "ir_private.h": "c",
+        "os_private.h": "c",
+        "os_config.h": "c",
+        "os_interface.h": "c"
     },
     "cSpell.words": [
         "CALIB",

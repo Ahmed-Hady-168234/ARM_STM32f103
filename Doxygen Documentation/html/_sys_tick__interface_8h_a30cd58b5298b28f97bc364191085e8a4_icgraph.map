@@ -1,0 +1,4 @@
+<map id="MSysTick_voidSetIntervalSingle" name="MSysTick_voidSetIntervalSingle">
+<area shape="rect" id="node1" title="This Function Sets a timer for one time call back the functions when the timer is done." alt="" coords="185,5,355,47"/>
+<area shape="rect" id="node2" href="$_i_r__interface_8h.html#ad2cd089c3335ebf42a4f18d05f62f1a8" title="This Function Just gets the frame and save it." alt="" coords="5,13,137,39"/>
+</map>

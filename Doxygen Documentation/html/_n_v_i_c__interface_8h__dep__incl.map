@@ -1,4 +1,5 @@
-<map id="02&#45;MCAL/03&#45;NVIC/NVIC_interface.h" name="02&#45;MCAL/03&#45;NVIC/NVIC_interface.h">
-<area shape="rect" id="node1" title="This file contains the function headers and the macros for the NVIC Driver that the User can see and ..." alt="" coords="5,5,168,47"/>
+<map id="01&#45;MCAL/03&#45;NVIC/NVIC_interface.h" name="01&#45;MCAL/03&#45;NVIC/NVIC_interface.h">
+<area shape="rect" id="node1" title="This file contains the function headers and the macros for the NVIC Driver that the User can see and ..." alt="" coords="105,5,268,47"/>
 <area shape="rect" id="node2" href="$_n_v_i_c__program_8c.html" title="This File contains the source code of the NVIC Driver Functions for Target stm32f10x." alt="" coords="5,95,168,136"/>
+<area shape="rect" id="node3" href="$_i_r__program_8c.html" title="This File contains the source code of the IR Driver Functions for Target stm32f10x." alt="" coords="193,102,381,129"/>
 </map>
