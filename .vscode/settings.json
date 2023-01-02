@@ -23,7 +23,10 @@
         "os_private.h": "c",
         "os_config.h": "c",
         "os_interface.h": "c",
-        "dma_interface.h": "c"
+        "dma_interface.h": "c",
+        "stp_interface.h": "c",
+        "stp_config.h": "c",
+        "stp_private.h": "c"
     },
     "cSpell.words": [
         "CALIB",

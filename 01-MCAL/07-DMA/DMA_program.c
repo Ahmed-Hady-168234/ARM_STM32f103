@@ -18,7 +18,7 @@
 void MDMA_voidChannelInit(void)
 {
 #ifdef CHANNEL_ID == CHANNEL_1
-      /*1- MEM to MEM
+    /*  1- MEM to MEM
         2- Very high
         3- Source size, Destination size = 32 bit
         4- MINC, DINC Activated
