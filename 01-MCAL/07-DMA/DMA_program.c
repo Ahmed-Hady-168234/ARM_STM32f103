@@ -52,5 +52,4 @@ void MDMA_voidChannelStart(uint32 *Copy_Pu32SourceAddress, uint32 *Copy_Pu32Dest
 
     /*Enable The Channel*/
     SET_BIT(DMA1 ->Channel[CHANNEL_ID].CCR,0);
-
 }
