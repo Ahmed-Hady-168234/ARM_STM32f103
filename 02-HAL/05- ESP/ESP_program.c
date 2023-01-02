@@ -142,3 +142,4 @@ uint8 u8ValidateCommand(void)
 	}
 	return Local_u8ReturnStatus;
 }
+

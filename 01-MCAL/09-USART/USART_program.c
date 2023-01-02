@@ -85,8 +85,7 @@ uint8 MUSART1_u8Receive(void)
         /*Check if the time is out*/
         if (Global_u16TimeOut == USART_REQUEST_TIME_OUT)
         {
-            /*
-             Waited too match... Get out of the loop */
+            /*Waited too match... Get out of the loop */
             break;
         }else
         {
