@@ -25,7 +25,7 @@
             GROUP3_1BITS_SUB_3BITS  >> 1 Bits for Group(2)  and 3 Bits for sub(8)
             GROUP4_0BITS_SUB_4BITS  >> 0 Bits for Group(0)  and 4 Bits for sub(16)
 */
-#define			NO_OF_GROUPS_AND_SUB_PRIORITIES		GROUP0_4BITS_SUB_0BITS
+#define			NO_OF_GROUPS_AND_SUB_PRIORITIES		GROUP2_2BITS_SUB_2BITS
 
 
 

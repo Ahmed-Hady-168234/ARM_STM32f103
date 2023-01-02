@@ -122,6 +122,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a75fc2b0838f78a298b833ca826102cdf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_n_v_i_c__program_8c.html#a75fc2b0838f78a298b833ca826102cdf">MNVIC_voidSetPriorities</a> (<a class="el" href="_s_t_d___t_y_p_e_s_8h.html#a1a6408291ee3cfd0760a61ac64084154">sint8</a> Copy_s8InterruptID, <a class="el" href="_s_t_d___t_y_p_e_s_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> Copy_u8GroupPriority, <a class="el" href="_s_t_d___t_y_p_e_s_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> Copy_u8SubPriority)</td></tr>
 <tr class="memdesc:a75fc2b0838f78a298b833ca826102cdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">This Function Sets the Group Priority and the sub priority for a specific Interrupt.  <a href="_n_v_i_c__program_8c.html#a75fc2b0838f78a298b833ca826102cdf">More...</a><br /></td></tr>
 <tr class="separator:a75fc2b0838f78a298b833ca826102cdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca1330b8a7543b7340f9433ea891cbb6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_n_v_i_c__program_8c.html#aca1330b8a7543b7340f9433ea891cbb6">MNVIC_voidInit</a> (void)</td></tr>
+<tr class="memdesc:aca1330b8a7543b7340f9433ea891cbb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the NVIC by setting number of bits for Group and Sub priorities.  <a href="_n_v_i_c__program_8c.html#aca1330b8a7543b7340f9433ea891cbb6">More...</a><br /></td></tr>
+<tr class="separator:aca1330b8a7543b7340f9433ea891cbb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This File contains the source code of the NVIC Driver Functions for Target stm32f10x. </p>
@@ -240,6 +243,27 @@ uint8 represents the Active flag
   </dd>
 </dl>
 <p>Note That: Writing 0 has no Effect ... so in matter of time optmization i didn't use <a class="el" href="_b_i_t___m_a_t_h_8h.html#ad3df36b526f8e448291e2fdf2b73789d">SET_BIT()</a> function</p>
+
+</div>
+</div>
+<a id="aca1330b8a7543b7340f9433ea891cbb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca1330b8a7543b7340f9433ea891cbb6">&#9670;&nbsp;</a></span>MNVIC_voidInit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MNVIC_voidInit </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes the NVIC by setting number of bits for Group and Sub priorities. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>Configure The Driver in first, see <a class="el" href="_n_v_i_c___config_8h.html" title="This file contains the Configuration for the NVIC Driver(User Should see and modify if needed)">NVIC_Config.h</a> </dd></dl>
 
 </div>
 </div>

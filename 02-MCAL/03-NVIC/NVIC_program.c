@@ -183,7 +183,7 @@ void MNVIC_voidSetPriorities(sint8 Copy_s8InterruptID, uint8 Copy_u8GroupPriorit
             if (Copy_u8GroupPriority < GROUP0_GROUP_MAX_NUM)        /*Error Handling*/
             {
                 /*No left shifting .. all the 4 bits for the group priority*/
-                NVIC_IPR[Copy_s8InterruptID] = Copy_u8GroupPriority;
+                NVIC_IPR[Copy_s8InterruptID] = Copy_u8GroupPriority<<NVIC_IPR_RESERVED_BITS_NUMBER;
             }else
             {
                 /*Error*/
@@ -194,7 +194,7 @@ void MNVIC_voidSetPriorities(sint8 Copy_s8InterruptID, uint8 Copy_u8GroupPriorit
             {
                 /*Shift left by 1 (The number of sub priority bits) and then add the subpriority to the result*/
                 /*left 3 bits for the group priority and the next 1 bit for the sub priority*/
-                NVIC_IPR[Copy_s8InterruptID] =  Copy_u8SubPriority | (Copy_u8GroupPriority<<GROUP1_SUB_PRIORITY_BITS_NUM);
+                NVIC_IPR[Copy_s8InterruptID] =  Copy_u8SubPriority | (Copy_u8GroupPriority<<GROUP1_SUB_PRIORITY_BITS_NUM)<<NVIC_IPR_RESERVED_BITS_NUMBER;
             }else
             {
                 /*Error*/
@@ -205,7 +205,7 @@ void MNVIC_voidSetPriorities(sint8 Copy_s8InterruptID, uint8 Copy_u8GroupPriorit
             {
                 /*Shift left by 2 (The number of sub priority bits) and then add the subpriority to the result*/
                 /*left 2 bits for the group priority and the next 2 bits for the sub priority*/
-                NVIC_IPR[Copy_s8InterruptID] =  Copy_u8SubPriority | (Copy_u8GroupPriority<<GROUP2_SUB_PRIORITY_BITS_NUM);
+                NVIC_IPR[Copy_s8InterruptID] =  (Copy_u8SubPriority | (Copy_u8GroupPriority<<GROUP2_SUB_PRIORITY_BITS_NUM))<<NVIC_IPR_RESERVED_BITS_NUMBER;
             }else
             {
                 /*Error*/
@@ -216,7 +216,7 @@ void MNVIC_voidSetPriorities(sint8 Copy_s8InterruptID, uint8 Copy_u8GroupPriorit
             {
                 /*Shift left by 3 (The number of sub priority bits) and then add the subpriority to the result*/
                 /*left 1 bit for the group priority and the next 3 bits for the sub priority*/
-                NVIC_IPR[Copy_s8InterruptID] =  Copy_u8SubPriority | (Copy_u8GroupPriority<<GROUP3_SUB_PRIORITY_BITS_NUM);
+                NVIC_IPR[Copy_s8InterruptID] =  Copy_u8SubPriority | (Copy_u8GroupPriority<<GROUP3_SUB_PRIORITY_BITS_NUM)<<NVIC_IPR_RESERVED_BITS_NUMBER;
             }else
             {
                 /*Error*/
@@ -226,7 +226,7 @@ void MNVIC_voidSetPriorities(sint8 Copy_s8InterruptID, uint8 Copy_u8GroupPriorit
             if (Copy_u8SubPriority < GROUP4_SUB_MAX_NUM)        /*Error Handling*/
             {
                 /*No left shifting .. all the 4 bits for the sub priority*/
-                NVIC_IPR[Copy_s8InterruptID] = Copy_u8SubPriority;
+                NVIC_IPR[Copy_s8InterruptID] = Copy_u8SubPriority<<NVIC_IPR_RESERVED_BITS_NUMBER;
             }else
             {
                 /*Error*/
@@ -237,10 +237,20 @@ void MNVIC_voidSetPriorities(sint8 Copy_s8InterruptID, uint8 Copy_u8GroupPriorit
             /*Error*/
             break;
         }
-        /*Set the Configuration for the group and sub priorities to the SCB_AIRCR*/
-        SCB_AIRCR = NO_OF_GROUPS_AND_SUB_PRIORITIES;
+       
 
    }
    
 
 } 
+
+/**
+ * @brief Initializes the NVIC by setting number of bits for Group and Sub priorities
+ * @pre Configure The Driver in first, see NVIC_Config.h
+ */
+void MNVIC_voidInit(void)
+{
+
+    /*Set the Configuration for the group and sub priorities to the SCB_AIRCR*/
+    SCB_AIRCR = NO_OF_GROUPS_AND_SUB_PRIORITIES;
+}

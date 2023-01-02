@@ -16,7 +16,7 @@
 #define NVIC_INTERFACE_H
 
 
-/*  Interrupts Numbers from Vector Table    */
+/*  Interrupts ID from Vector Table    */
 #define NVIC_WWDG 0
 #define NVIC_PVD    1
 #define NVIC_TAMPER 2
@@ -58,12 +58,46 @@
 #define NVIC_USART2         38
 #define NVIC_USART3         39
 
+/*Macros for Group and Sub numbers(passed To MNVIC_voidSetPriorities()*/
+#define NVIC_GROUP_PRIORITY_0  0
+#define NVIC_GROUP_PRIORITY_1  1
+#define NVIC_GROUP_PRIORITY_2  2
+#define NVIC_GROUP_PRIORITY_3  3
+#define NVIC_GROUP_PRIORITY_4  4
+#define NVIC_GROUP_PRIORITY_5  5
+#define NVIC_GROUP_PRIORITY_6  6
+#define NVIC_GROUP_PRIORITY_7  7
+#define NVIC_GROUP_PRIORITY_8  8
+#define NVIC_GROUP_PRIORITY_9  9
+#define NVIC_GROUP_PRIORITY_10 10
+#define NVIC_GROUP_PRIORITY_11 11
+#define NVIC_GROUP_PRIORITY_12 12
+#define NVIC_GROUP_PRIORITY_13 13
+#define NVIC_GROUP_PRIORITY_14 14
+#define NVIC_GROUP_PRIORITY_15 15
+#define NVIC_SUB_PRIORITY_0    0
+#define NVIC_SUB_PRIORITY_1    1
+#define NVIC_SUB_PRIORITY_2    2
+#define NVIC_SUB_PRIORITY_3    3
+#define NVIC_SUB_PRIORITY_4    4
+#define NVIC_SUB_PRIORITY_5    5
+#define NVIC_SUB_PRIORITY_6    6
+#define NVIC_SUB_PRIORITY_7    7
+#define NVIC_SUB_PRIORITY_8    8
+#define NVIC_SUB_PRIORITY_9    9
+#define NVIC_SUB_PRIORITY_10   10
+#define NVIC_SUB_PRIORITY_11   11
+#define NVIC_SUB_PRIORITY_12   12
+#define NVIC_SUB_PRIORITY_13   13
+#define NVIC_SUB_PRIORITY_14   14
+#define NVIC_SUB_PRIORITY_15   15
+
 /****************** The driver Functions ******************/
+void MNVIC_voidInit(void);
 void MNVIC_voidEnableInterrupt(uint8 Copy_u8IntNumber);
 void MNVIC_voidDisableInterrupt(uint8 Copy_u8IntNumber);
 void MNVIC_voidSetPendingFlag(uint8 Copy_u8IntNumber);
 void MNVIC_voidClearPendingFlag(uint8 Copy_u8IntNumber);
 uint8 MNVIC_u8GetActiveFlag(uint8 Copy_u8IntNumber);
 void MNVIC_voidSetPriorities(sint8 Copy_s8InterruptID, uint8 Copy_u8GroupPriority, uint8 Copy_u8SubPriority );
-
 #endif

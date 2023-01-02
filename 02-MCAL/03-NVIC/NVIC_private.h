@@ -45,7 +45,6 @@
 
 
 
-
 /*This Macro passed to MNVIC_voidSetPriorities() .. parameter */
 /*Choose The number of Gropus and Sub priorities*/
 #define GROUP0_4BITS_SUB_0BITS 0x05FA0300 /* 4 Bits for Group(16) and 0 Bits for sub(0)*/
@@ -56,7 +55,7 @@
 
 /*Macros used with the priority function to avoid the magic numbers, shows the total number in sub and group priorities for each GROUP */
 #define GROUP0_GROUP_MAX_NUM 16 
-#define GROUP0_SUB_MAX_NUM 0
+#define GROUP0_SUB_MAX_NUM  0
 #define GROUP1_GROUP_MAX_NUM 8 
 #define GROUP1_SUB_MAX_NUM 2
 #define GROUP2_GROUP_MAX_NUM 4 
@@ -73,6 +72,10 @@
 #define GROUP3_SUB_PRIORITY_BITS_NUM 3
 #define GROUP4_SUB_PRIORITY_BITS_NUM 4
 
+/*Macros used in the priority Function to avoid magic numbers
+  Denotes the number of reserved bits in the IPR register for each Interrupt which is 4 bits
+*/
+#define NVIC_IPR_RESERVED_BITS_NUMBER   4
 
 /*Macros used in the code to avoid Magic Numbers*/
 #define NVIC_REGISTER0_LAST_INT_NUM 32

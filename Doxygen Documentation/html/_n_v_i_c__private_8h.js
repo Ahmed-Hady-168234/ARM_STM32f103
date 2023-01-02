@@ -27,6 +27,7 @@ var _n_v_i_c__private_8h =
     [ "NVIC_ICPR0", "_n_v_i_c__private_8h.html#aeb09517cca2787f10d91a2e25ebd41db", null ],
     [ "NVIC_ICPR1", "_n_v_i_c__private_8h.html#a58d5a0d0442bf3f5f7f6017536ce530e", null ],
     [ "NVIC_IPR", "_n_v_i_c__private_8h.html#a3adf1eca58dc064b64c3de8085124c54", null ],
+    [ "NVIC_IPR_RESERVED_BITS_NUMBER", "_n_v_i_c__private_8h.html#af46e8cddc689a8d41f54bf0180b8aed1", null ],
     [ "NVIC_ISER0", "_n_v_i_c__private_8h.html#ab37d21c2e44fe7e3967deaf10e30a763", null ],
     [ "NVIC_ISER1", "_n_v_i_c__private_8h.html#aeea822ab87e3ef3b207f26c6176a746c", null ],
     [ "NVIC_ISPR0", "_n_v_i_c__private_8h.html#ac5c4c22865b33441cb6feb9cc7cc921e", null ],
