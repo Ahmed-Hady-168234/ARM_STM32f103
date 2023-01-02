@@ -35,12 +35,7 @@
 #define LEDMRX_COL6_PIN     GPIOB,9
 #define LEDMRX_COL7_PIN     GPIOB,10
 
-/*This is the factor used in speeding up/down the display
-    Speed Up  : Divide   The Delay Counter by LEDMRX_SPEED_UP_DOWN_FACTOR
-    Speed DOWN: Multiply The Delay Counter by LEDMRX_SPEED_UP_DOWN_FACTOR
-    It should be 1 < LEDMRX_SPEED_UP_DOWN_FACTOR < 100 
-    */
-#define LEDMRX_SPEED_UP_DOWN_FACTOR 10
+
 
 
 #endif
