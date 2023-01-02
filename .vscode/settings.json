@@ -3,6 +3,11 @@
         "std_types.h": "c",
         "gpio_interface.h": "c",
         "nvic_private.h": "c",
-        "bit_math.h": "c"
+        "bit_math.h": "c",
+        "exti_private.h": "c",
+        "exti_interface.h": "c",
+        "afio_private.h": "c",
+        "afio_config.h": "c",
+        "exti_config.h": "c"
     }
 }

@@ -25,13 +25,21 @@
 var NAVTREE =
 [
   [ "Drivers", "index.html", [
+    [ "Data Structures", "annotated.html", [
+      [ "Data Structures", "annotated.html", "annotated_dup" ],
+      [ "Data Structure Index", "classes.html", null ],
+      [ "Data Fields", "functions.html", [
+        [ "All", "functions.html", null ],
+        [ "Variables", "functions_vars.html", null ]
+      ] ]
+    ] ],
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
       [ "Globals", "globals.html", [
         [ "All", "globals.html", "globals_dup" ],
         [ "Functions", "globals_func.html", null ],
         [ "Typedefs", "globals_type.html", null ],
-        [ "Macros", "globals_defs.html", null ]
+        [ "Macros", "globals_defs.html", "globals_defs" ]
       ] ]
     ] ]
   ] ]
@@ -39,8 +47,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_b_i_t___m_a_t_h_8h.html",
-"seven_segments__private_8h.html#adaf97a0f44fe98a9560992c6bcd9a251"
+"_a_f_i_o___config_8h.html",
+"_r_c_c__private_8h.html#abd45f7fb32c4e16995e076fea67d5b65"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
