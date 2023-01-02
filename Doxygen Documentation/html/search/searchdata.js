@@ -4,9 +4,9 @@ var indexSectionsWithContent =
   1: "ae",
   2: "abegnrs",
   3: "gmrs",
-  4: "cefimprs",
+  4: "efimprs",
   5: "su",
-  6: "acefghilmnoprst"
+  6: "aceghilmnoprst"
 };
 
 var indexSectionNames =

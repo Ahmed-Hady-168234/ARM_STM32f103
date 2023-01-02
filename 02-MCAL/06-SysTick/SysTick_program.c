@@ -15,7 +15,7 @@
 #include "SysTick_Config.h"
 
 /*Variable used to save the call back function passed by the user*/
-void (*CallBackFunc) (void);
+void (*CallBackFunc) (void) = NULL;
 
 /*isIntervalSingle Flag 1 if the running timer is Interval single(Run one)
                         0 if the running timer is Interval single(Run Multiple Times)*/
@@ -50,7 +50,7 @@ void MSysTick_voidInit(void)
  *      SYSTICK_OK the >> function successfully finished the work with .. no errors and the call Back Function will be called when the timer is done
  *      SYSTICK_ANOTHER_TIMER_IS_RUNNING >> there is another running timer .. error
  *      SYSTICK_TICKS_EXCEEDED_MAX_VALUE >> The input Ticks value Exceeded MAXIMUM_COUNT_VALUE (2^24)
- * </b></pre>
+ * </pre></b>
  */
 SysTick_returnType MSysTick_voidSetBusyWait(uint32 Copy_u32Ticks)
 {
@@ -96,7 +96,7 @@ SysTick_returnType MSysTick_voidSetBusyWait(uint32 Copy_u32Ticks)
  *      SYSTICK_OK the >> function successfully finished the work with .. no errors and the call Back Function will be called when the timer is done
  *      SYSTICK_ANOTHER_TIMER_IS_RUNNING >> there is another running timer .. error
  *      SYSTICK_NULL_POINTER >> The pointer to function is NULL
- * </b></pre>
+ * </pre></b>
  * @pre You Should Call the MSysTick_voidInit() in first
  */
 SysTick_returnType MSysTick_voidSetIntervalSingle(uint32 Copy_u32Ticks, void (*Copy_ptr)(void) )/*ASynchronous Function */
@@ -170,7 +170,7 @@ void SysTick_Handler(void)
  *      SYSTICK_OK the >> function successfully finished the work with .. no errors and the call Back Function will be called when the timer is done
  *      SYSTICK_ANOTHER_TIMER_IS_RUNNING >> there is another running timer .. error
  *      SYSTICK_NULL_POINTER >> The pointer to function is NULL
- * </b></pre>
+ * </pre></b>
  * @pre You Should Call the MSysTick_voidInit() in first
  */
 SysTick_returnType MSysTick_voidSetIntervalPeriodic(uint32 Copy_u32Ticks, void (*Copy_ptr)(void) )/*ASynchronous Function */

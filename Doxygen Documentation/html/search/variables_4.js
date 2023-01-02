@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['mapr_467',['MAPR',['../struct_a_f_i_o__t.html#a7e0c674cbc5b873f1d53327683291fb5',1,'AFIO_t']]],
-  ['mapr2_468',['MAPR2',['../struct_a_f_i_o__t.html#a07a30fd02f8a8b7708131846c9839435',1,'AFIO_t']]]
+  ['pr_418',['PR',['../struct_e_x_t_i__t.html#ace87a86bea8fd396f3a5c3088cc12e15',1,'EXTI_t']]]
 ];
