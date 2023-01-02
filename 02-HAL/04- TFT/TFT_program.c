@@ -3,8 +3,9 @@
  * @file TFT_program.c
  * @author Ahmed Hady (ahmed168234@gmail.com)
  * @brief This File contains the source code of the TFT Driver Functions for Target stm32f10x
- * @version V01
- * @date 2022-09-13
+ * @version V02
+ * @details Added to functions... HTFT_voidFillColor() and HTFT_voidDrawRect90
+ * @date 2022-09-15
  * @copyright Copyright (c) 2022
  * 
  */
@@ -65,24 +66,24 @@ void HTFT_voidInit(void)
 void HTFT_voidDisplayImage(const uint16 *Copy_u16Image)
 {
 	uint16	Local_u16Counter;
-	/*		Set X(Comlumn) Address (0, 0) >>> (0, 127)		*/
-	voidWriteCommand(CASET);
-	/*Start (0,0)*/
+	/*		Set X(Comlumn) Address 0 to 127   (High Byte, Low Byte)>.. (0, 0) >>> (0, 127)		*/
+	voidWriteCommand(CASET);	
+	/*Start 0 (High Byte, Low Byte) >>> (0,0)*/
 	voidWriteData(COLUMN_START);/*The X(Column) parameter 1st byte*/
 	voidWriteData(COLUMN_START);/*The X(Column) parameter 2nd byte*/
-	/*End (0,127)*/
+	/*End 127 (High Byte, Low Byte) >>> (0, 127)*/
 	voidWriteData(COLUMN_END_BYTE1);/*The X(Column) parameter 1st byte*/
 	voidWriteData(COLUMN_END_BYTE2);/*The X(Column) parameter 2nd byte*/
 
 
-	/*		Set Y(Comlumn) Address (0, 0) >>> (159, 127)		*/
+	/*		Set Y(Comlumn) Address 0 to 159   (High Byte, Low Byte)>.. (0, 0) >>> (0, 159)		*/
 	voidWriteCommand(RASET);
-	/*Start (0,0)*/
-	voidWriteData(ROW_START);/*The X(Column) parameter 1st byte*/
-	voidWriteData(ROW_START);/*The X(Column) parameter 2nd byte*/
-	/*End (0,159)*/
-	voidWriteData(ROW_END_BYTE1);/*The X(Column) parameter 1st byte*/
-	voidWriteData(ROW_END_BYTE2);/*The X(Column) parameter 2nd byte*/
+	/*Start 0 (High Byte, Low Byte) >>> (0,0)*/
+	voidWriteData(ROW_START);/*The Y(Row) parameter High byte*/
+	voidWriteData(ROW_START);/*The Y(Row) parameter Low byte*/
+	/*End 159 (High Byte, Low Byte) >>> (0, 159)*/
+	voidWriteData(ROW_END_BYTE1);/*The Y(Row) parameter High byte*/
+	voidWriteData(ROW_END_BYTE2);/*The Y(Row) parameter Low byte*/
 
 	/*Ram Write(Any coming data will be displayed)*/
 	voidWriteCommand(RAMWR);
@@ -93,7 +94,97 @@ void HTFT_voidDisplayImage(const uint16 *Copy_u16Image)
 		voidWriteData( (uint8) ( Copy_u16Image[Local_u16Counter] >> BYTE  ) );/*Send The Most Byte*/
 		voidWriteData( (uint8) ( Copy_u16Image[Local_u16Counter] & 0x00ff ) );		   /*Send The Least Byte*/
 	}
-	
+}
+
+/**
+ * @brief This Function Displays 
+ * 
+ * @pre You should Initialize the driver in first see HTFT_voidInit()
+ */
+void HTFT_voidFillColor(uint16 Copy_u16Color)
+{
+	uint16	Local_u16Counter;
+	/*		Set X(Comlumn) Address 0 to 127   (High Byte, Low Byte)>.. (0, 0) >>> (0, 127)		*/
+	voidWriteCommand(CASET);
+	/*Start (High Byte, Low Byte) >>> (0,0)*/
+	voidWriteData(COLUMN_START);/*The X(Column) parameter High byte*/
+	voidWriteData(COLUMN_START);/*The X(Column) parameter Low byte*/
+	/*End (High Byte, Low Byte) >>> (0, 127)*/
+	voidWriteData(COLUMN_END_BYTE1);/*The X(Column) parameter High byte*/
+	voidWriteData(COLUMN_END_BYTE2);/*The X(Column) parameter Low byte*/
+
+
+	/*		Set Y(Comlumn) Address 0 to 159   (High Byte, Low Byte)>.. (0, 0) >>> (0, 159)		*/
+	voidWriteCommand(RASET);
+	/*Start 0 (High Byte, Low Byte) >>> (0,0)*/
+	voidWriteData(ROW_START);/*The X(Column) parameter High byte*/
+	voidWriteData(ROW_START);/*The X(Column) parameter Low byte*/
+	/*End 159 (High Byte, Low Byte) >>> (0, 159)*/
+	voidWriteData(ROW_END_BYTE1);/*The X(Column) parameter High byte*/
+	voidWriteData(ROW_END_BYTE2);/*The X(Column) parameter Low byte*/
+
+	/*Ram Write(Any coming data will be displayed)*/
+	voidWriteCommand(RAMWR);
+
+	/*Write The Image on the screen*/
+	for (Local_u16Counter = 0; Local_u16Counter < NUMBER_OF_PIXELS; Local_u16Counter++)
+	{
+		voidWriteData( (uint8) ( Copy_u16Color >> BYTE  ) );/*Send The Most Byte*/
+		voidWriteData( (uint8) ( Copy_u16Color & 0x00ff ) );		   /*Send The Least Byte*/
+	}
+}
+
+
+
+TFT_returnType HTFT_voidDrawRect(uint8 Copy_u8X1, uint8 Copy_u8X2, uint8 Copy_u8Y1, uint8 Copy_u8Y2, uint16 Copy_u16Color)
+{
+	uint16	Local_u16Counter, Local_u16NoOfPixels;
+	TFT_returnType Local_TFTReturnStatus = TFT_E_OK;
+	/*Error Handling*/
+	if (Copy_u8X2 >= Copy_u8X1 && 		/*X2 should be same or larger than X1*/
+		Copy_u8Y2 >= Copy_u8Y1 && 		/*Y2 should be same or larger than Y1*/
+		Copy_u8X2 < COLUMN_END_BYTE2 && /*X2 should be in range (from 0 to COLUMN_END_BYTE2)*/
+		Copy_u8Y2 < ROW_END_BYTE2)		/*Y2 should be in range (from 0 to ROW_END_BYTE2)*/
+	{
+		/*		Set X(Comlumn) Address X1 to X2   (High Byte, Low Byte)>.. (0, X1) >>> (0, X2)		*/
+		voidWriteCommand(CASET);
+		/*Start (High Byte, Low Byte) >>> (0,0)*/
+		voidWriteData(0);/*The X(Column) parameter High byte*/
+		voidWriteData(Copy_u8X1);/*The X(Column) parameter Low byte*/
+		/*End (High Byte, Low Byte) >>> (0, 127)*/
+		voidWriteData(0);/*The X(Column) parameter High byte*/
+		voidWriteData(Copy_u8X2);/*The X(Column) parameter Low byte*/
+
+
+		/*		Set Y(Comlumn) Address Y1 to Y2   (High Byte, Low Byte)>.. (0, Y1) >>> (0, Y2)		*/
+		voidWriteCommand(RASET);
+		/*Start 0 (High Byte, Low Byte) >>> (0,0)*/
+		voidWriteData(0);/*The X(Column) parameter High byte*/
+		voidWriteData(Copy_u8Y1);/*The X(Column) parameter Low byte*/
+		/*End 159 (High Byte, Low Byte) >>> (0, 159)*/
+		voidWriteData(0);/*The X(Column) parameter High byte*/
+		voidWriteData(Copy_u8Y2);/*The X(Column) parameter Low byte*/
+
+		/*Ram Write(Any coming data will be displayed)*/
+		voidWriteCommand(RAMWR);
+
+		/*Calculate The Number of Pixels (The Rectangle Area)*/
+		Local_u16NoOfPixels = (Copy_u8X2 - Copy_u8X1) * (Copy_u8Y2 - Copy_u8Y1);
+
+		/*Write The Image on the screen*/
+		for (Local_u16Counter = 0; Local_u16Counter < Local_u16NoOfPixels; Local_u16Counter++)
+		{
+			voidWriteData( Copy_u16Color >> BYTE  );/*Send The Most Byte*/
+			voidWriteData( Copy_u16Color & 0x00ff );		   /*Send The Least Byte*/
+		}
+	}else
+	{
+		/*Error ... Invalid Input*/
+		/*Do Nothing .... MISRA Rules*/
+		Local_TFTReturnStatus = TFT_INVALID_INPUT;
+	}
+
+	return Local_TFTReturnStatus;
 }
 
 /**
@@ -110,7 +201,6 @@ static void voidWriteData(uint8 Copy_u8Data)
 	
 	/*Send The Data to the TFT Micro*/
 	MSPI1_voidSendReceiveSynch(Copy_u8Data, &Local_u8temp);
-
 }
 
 /**

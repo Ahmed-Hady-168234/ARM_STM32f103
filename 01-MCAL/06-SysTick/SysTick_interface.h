@@ -15,7 +15,7 @@
 #ifndef SysTick_INTERFACE_H
 #define SysTick_INTERFACE_H
 
-/*SysTick Return Type used in the*/
+/*SysTick Return Type*/
 typedef uint8 SysTick_returnType;
 
 /****************** API.. Driver Functions  ******************/
