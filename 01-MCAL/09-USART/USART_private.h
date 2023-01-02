@@ -2,9 +2,9 @@
  * @file USART_private.h
  * @author Ahmed Hady (ahmed168234@gmail.com)
  * @brief This file contains the Registers and the macros for the USART Driver the User shouldn't see this
- * @version V01
- * @date 2022-09-12
- * 
+ * @version V02
+ * @date 2022-09-21
+ * @details Adding a configurable time out for any waiting loop
  * @copyright Copyright (c) 2022
  * 
  */
