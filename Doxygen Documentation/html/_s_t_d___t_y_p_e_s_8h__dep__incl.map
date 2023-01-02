@@ -1,7 +1,6 @@
 <map id="01&#45;Lib/01&#45;STD_TYPES/STD_TYPES.h" name="01&#45;Lib/01&#45;STD_TYPES/STD_TYPES.h">
-<area shape="rect" id="node1" title=" " alt="" coords="287,5,442,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="191,5,346,47"/>
 <area shape="rect" id="node2" href="$_r_c_c__program_8c.html" title="This File contains the source code of the RCC Driver Functions for Target stm32f10x." alt="" coords="5,95,161,136"/>
 <area shape="rect" id="node3" href="$_g_p_i_o__program_8c.html" title="This File contains the source code of the GPIO Driver Functions for Target stm32f10x." alt="" coords="185,95,352,136"/>
 <area shape="rect" id="node4" href="$seven_segments_8c.html" title=" " alt="" coords="376,102,548,129"/>
-<area shape="rect" id="node5" href="$main_8c.html" title=" " alt="" coords="573,102,634,129"/>
 </map>

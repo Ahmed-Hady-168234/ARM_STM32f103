@@ -97,10 +97,9 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="_g_p_i_o__interface_8h__dep__incl.png" border="0" usemap="#a02-_m_c_a_l_202-_g_p_i_o_2_g_p_i_o__interface_8hdep" alt=""/></div>
 <map name="a02-_m_c_a_l_202-_g_p_i_o_2_g_p_i_o__interface_8hdep" id="a02-_m_c_a_l_202-_g_p_i_o_2_g_p_i_o__interface_8hdep">
-<area shape="rect" title="This file contains the function headers and the macros for the GPIO Driver that the User can see and ..." alt="" coords="199,5,365,47"/>
+<area shape="rect" title="This file contains the function headers and the macros for the GPIO Driver that the User can see and ..." alt="" coords="101,5,268,47"/>
 <area shape="rect" href="_g_p_i_o__program_8c.html" title="This File contains the source code of the GPIO Driver Functions for Target stm32f10x." alt="" coords="5,95,172,136"/>
 <area shape="rect" href="seven_segments_8c.html" title=" " alt="" coords="196,102,368,129"/>
-<area shape="rect" href="main_8c.html" title=" " alt="" coords="393,102,454,129"/>
 </map>
 </div>
 </div>
@@ -199,6 +198,12 @@ Functions</h2></td></tr>
 <tr class="separator:ab58d8bf23c608c74a0b79a3bf12d3d78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78ab731791eb4c36606c4306b522cf6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_s_t_d___t_y_p_e_s_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_g_p_i_o__interface_8h.html#a78ab731791eb4c36606c4306b522cf6b">GPIO_voidGetPinValue</a> (<a class="el" href="_s_t_d___t_y_p_e_s_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> copy_u8PORT, <a class="el" href="_s_t_d___t_y_p_e_s_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> copy_u8PIN)</td></tr>
 <tr class="separator:a78ab731791eb4c36606c4306b522cf6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08ad594bfffa33387bcac19a61ac6b14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_g_p_i_o__interface_8h.html#a08ad594bfffa33387bcac19a61ac6b14">GPIO_voidLockByPinNum</a> (<a class="el" href="_s_t_d___t_y_p_e_s_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> copy_u8PORT, <a class="el" href="_s_t_d___t_y_p_e_s_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> copy_u8PIN)</td></tr>
+<tr class="memdesc:a08ad594bfffa33387bcac19a61ac6b14"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function Locks a specific pin (Can't change its Mode anymore)  <a href="_g_p_i_o__interface_8h.html#a08ad594bfffa33387bcac19a61ac6b14">More...</a><br /></td></tr>
+<tr class="separator:a08ad594bfffa33387bcac19a61ac6b14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bed1166b80b3fc3971f37d52fdd8d4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_g_p_i_o__interface_8h.html#a7bed1166b80b3fc3971f37d52fdd8d4e">GPIO_voidLockByPortMask</a> (<a class="el" href="_s_t_d___t_y_p_e_s_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> copy_u8PORT, <a class="el" href="_s_t_d___t_y_p_e_s_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a> copy_u8PortMask)</td></tr>
+<tr class="memdesc:a7bed1166b80b3fc3971f37d52fdd8d4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function Locks a Port by Mask.  <a href="_g_p_i_o__interface_8h.html#a7bed1166b80b3fc3971f37d52fdd8d4e">More...</a><br /></td></tr>
+<tr class="separator:a7bed1166b80b3fc3971f37d52fdd8d4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains the function headers and the macros for the GPIO Driver that the User can see and use. </p>
@@ -802,15 +807,99 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd>You should Call <a class="el" href="_g_p_i_o__program_8c.html#a9ac056721c87163b4ff3bb2fe47b51bb" title="This Function Sets the Pin Mode.">GPIO_voidSetPinDirection()</a> in first </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>uint8 that represents the Pin's Value </dd></dl>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="_g_p_i_o__interface_8h_a78ab731791eb4c36606c4306b522cf6b_icgraph.png" border="0" usemap="#a_g_p_i_o__interface_8h_a78ab731791eb4c36606c4306b522cf6b_icgraph" alt=""/></div>
-<map name="a_g_p_i_o__interface_8h_a78ab731791eb4c36606c4306b522cf6b_icgraph" id="a_g_p_i_o__interface_8h_a78ab731791eb4c36606c4306b522cf6b_icgraph">
-<area shape="rect" title=" " alt="" coords="104,5,260,32"/>
-<area shape="rect" href="main_8c.html#a6288eba0f8e8ad3ab1544ad731eb7667" title=" " alt="" coords="5,5,56,32"/>
-</map>
+
 </div>
+</div>
+<a id="a08ad594bfffa33387bcac19a61ac6b14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08ad594bfffa33387bcac19a61ac6b14">&#9670;&nbsp;</a></span>GPIO_voidLockByPinNum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GPIO_voidLockByPinNum </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_s_t_d___t_y_p_e_s_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a>&#160;</td>
+          <td class="paramname"><em>copy_u8PORT</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_s_t_d___t_y_p_e_s_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a>&#160;</td>
+          <td class="paramname"><em>copy_u8PIN</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function Locks a specific pin (Can't change its Mode anymore) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">copy_u8PORT</td><td>Refereces to the port .. options(GPIOA, GPIOB, GPIOC) </td></tr>
+    <tr><td class="paramname">copy_u8PIN</td><td>Pin Number ... options(PIN0, PIN1, ....., PIN15)</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>This Function Locks a specific Pin so that no one Can Change the mode of that pin anymore </p>
+<p>Then Cofirm The lock using GPIOx_LCKR register</p>
+<p>LOCK key writing sequence(According to Data Sheet):</p>
+<p>Write 1</p>
+<p>Write 0</p>
+<p>Write 1</p>
+<p>Read 0</p>
+<p>Read 1 (this read is optional but confirms that the lock is active)</p>
+<p>End of Lock sequence</p>
+
+</div>
+</div>
+<a id="a7bed1166b80b3fc3971f37d52fdd8d4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bed1166b80b3fc3971f37d52fdd8d4e">&#9670;&nbsp;</a></span>GPIO_voidLockByPortMask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GPIO_voidLockByPortMask </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_s_t_d___t_y_p_e_s_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a>&#160;</td>
+          <td class="paramname"><em>copy_u8PORT</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_s_t_d___t_y_p_e_s_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a>&#160;</td>
+          <td class="paramname"><em>copy_u8PortMask</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function Locks a Port by Mask. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">copy_u8PORT</td><td>Refereces to the port .. options(GPIOA, GPIOB, GPIOC) </td></tr>
+    <tr><td class="paramname">&lt;pre&gt;copy_u8PortMask</td><td>Port Mask that the users chooses which pins to be locked and which to be not it consists of 16 bits each bit represents a pin from the 16 pins of the port if bit 0 then the coresponding pin will not be lokced if bit 1 then the coresponding pin will be locked </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>This Function Locks a port by mask so that no one Can Change the mode of the specified pins anymore </p>
+<p>First.. Lock the Pins using mask</p>
+<p>Then Cofirm The lock using GPIOx_LCKR register</p>
+<p>LOCK key writing sequence(According to Data Sheet):</p>
+<p>Write 1</p>
+<p>Write 0</p>
+<p>Write 1</p>
+<p>Read 0</p>
+<p>Read 1 (this read is optional but confirms that the lock is active)</p>
+<p>End of Lock sequence</p>
 
 </div>
 </div>
@@ -856,15 +945,7 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd>you should Enable the peripheral clock in first (see RCC Driver) </dd></dl>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="_g_p_i_o__interface_8h_a9ac056721c87163b4ff3bb2fe47b51bb_icgraph.png" border="0" usemap="#a_g_p_i_o__interface_8h_a9ac056721c87163b4ff3bb2fe47b51bb_icgraph" alt=""/></div>
-<map name="a_g_p_i_o__interface_8h_a9ac056721c87163b4ff3bb2fe47b51bb_icgraph" id="a_g_p_i_o__interface_8h_a9ac056721c87163b4ff3bb2fe47b51bb_icgraph">
-<area shape="rect" title="This Function Sets the Pin Mode." alt="" coords="104,5,277,32"/>
-<area shape="rect" href="main_8c.html#a6288eba0f8e8ad3ab1544ad731eb7667" title=" " alt="" coords="5,5,56,32"/>
-</map>
-</div>
+<p>Error Handling</p>
 
 </div>
 </div>
@@ -909,16 +990,16 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
-<dl class="section pre"><dt>Precondition</dt><dd>You should Call <a class="el" href="_g_p_i_o__program_8c.html#a9ac056721c87163b4ff3bb2fe47b51bb" title="This Function Sets the Pin Mode.">GPIO_voidSetPinDirection()</a> in first </dd></dl>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="_g_p_i_o__interface_8h_ab58d8bf23c608c74a0b79a3bf12d3d78_icgraph.png" border="0" usemap="#a_g_p_i_o__interface_8h_ab58d8bf23c608c74a0b79a3bf12d3d78_icgraph" alt=""/></div>
-<map name="a_g_p_i_o__interface_8h_ab58d8bf23c608c74a0b79a3bf12d3d78_icgraph" id="a_g_p_i_o__interface_8h_ab58d8bf23c608c74a0b79a3bf12d3d78_icgraph">
-<area shape="rect" title="This Function Sets the Pin value." alt="" coords="104,5,259,32"/>
-<area shape="rect" href="main_8c.html#a6288eba0f8e8ad3ab1544ad731eb7667" title=" " alt="" coords="5,5,56,32"/>
-</map>
-</div>
+<dl class="section pre"><dt>Precondition</dt><dd>You should Call <a class="el" href="_g_p_i_o__program_8c.html#a9ac056721c87163b4ff3bb2fe47b51bb" title="This Function Sets the Pin Mode.">GPIO_voidSetPinDirection()</a> in first</dd></dl>
+<pre> Please Note that
+     In <b>GPIOx_BSRR</b> regsiter(From bit 0 to 15) puting
+         0: No action on the corresponding ODRx bit(Pin)
+         1: Set the corresponding ODRx bit(Pin)
+
+     In <b>GPIOx_BRR</b> regsiter(From bit 0 to 15) puting
+         0: No action on the corresponding ODRx bit(Pin)
+         1: Reset the corresponding ODRx bit(Pin)
+</pre> <p>Error Handling</p>
 
 </div>
 </div>

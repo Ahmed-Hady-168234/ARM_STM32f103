@@ -1,6 +1,8 @@
 {
-    "C_Cpp.autocompleteAddParentheses": true,
     "files.associations": {
-        "sevensegments_interface.h": "c"
+        "std_types.h": "c",
+        "gpio_interface.h": "c",
+        "nvic_private.h": "c",
+        "bit_math.h": "c"
     }
 }
