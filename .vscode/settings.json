@@ -22,7 +22,8 @@
         "ir_private.h": "c",
         "os_private.h": "c",
         "os_config.h": "c",
-        "os_interface.h": "c"
+        "os_interface.h": "c",
+        "dma_interface.h": "c"
     },
     "cSpell.words": [
         "CALIB",
