@@ -1,6 +1,5 @@
 <map id="HLEDMRX_voidDisplayMovingWord" name="HLEDMRX_voidDisplayMovingWord">
 <area shape="rect" id="node1" title="This function Displays a word, char by char .. moving from left to right." alt="" coords="5,31,232,57"/>
-<area shape="rect" id="node2" href="$_g_p_i_o__interface_8h.html#ab58d8bf23c608c74a0b79a3bf12d3d78" title="This Function Sets the Pin value." alt="" coords="515,5,669,32"/>
-<area shape="rect" id="node3" href="$_l_e_d_m_r_x__program_8c.html#a72e1a9cdbf144713ede2e47174927a3e" title="Enables the required rows values." alt="" coords="281,31,465,57"/>
-<area shape="rect" id="node4" href="$_sys_tick__interface_8h.html#ac38ef868f1d03592ba984b637fcc4ca2" title="This Function acts like function dealy(), it waits(Stucks) till the ticks finishes." alt="" coords="280,81,467,108"/>
+<area shape="rect" id="node2" href="$_l_e_d_m_r_x__program_8c.html#a72e1a9cdbf144713ede2e47174927a3e" title="Enables the required rows values." alt="" coords="281,5,465,32"/>
+<area shape="rect" id="node3" href="$_sys_tick__interface_8h.html#ac38ef868f1d03592ba984b637fcc4ca2" title="This Function acts like function dealy(), it waits(Stucks) till the ticks finishes." alt="" coords="280,56,467,83"/>
 </map>

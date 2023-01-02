@@ -1,0 +1,5 @@
+<map id="HTFT_voidInit" name="HTFT_voidInit">
+<area shape="rect" id="node1" title="This Function Initializes the TFT Display Driver." alt="" coords="5,31,104,57"/>
+<area shape="rect" id="node2" href="$_g_p_i_o__interface_8h.html#aa126d121ed7b6e7c845406531d0a3ce6" title="This Function Sets the Pin value." alt="" coords="162,5,329,32"/>
+<area shape="rect" id="node3" href="$_sys_tick__interface_8h.html#ac38ef868f1d03592ba984b637fcc4ca2" title="This Function acts like function dealy(), it waits(Stucks) till the ticks finishes." alt="" coords="152,56,339,83"/>
+</map>

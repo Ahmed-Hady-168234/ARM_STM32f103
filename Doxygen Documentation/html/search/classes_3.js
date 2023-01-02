@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['task_464',['Task',['../struct_task.html',1,'']]]
+  ['ledmrx_5fconfig_5ft_605',['LEDMRX_config_t',['../struct_l_e_d_m_r_x__config__t.html',1,'']]]
 ];

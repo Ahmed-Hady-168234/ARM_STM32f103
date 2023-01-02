@@ -25,5 +25,7 @@ typedef   signed long long int sint64;
 #define FALSE 0
 #define TRUE  1
 
+#define BYTE    8
+
 #endif
 

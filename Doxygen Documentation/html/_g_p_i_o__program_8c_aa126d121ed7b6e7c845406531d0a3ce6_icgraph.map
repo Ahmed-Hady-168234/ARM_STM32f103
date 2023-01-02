@@ -1,0 +1,7 @@
+<map id="MGPIO_voidSetPinValue" name="MGPIO_voidSetPinValue">
+<area shape="rect" id="node1" title="This Function Sets the Pin value." alt="" coords="264,81,431,108"/>
+<area shape="rect" id="node2" href="$_t_f_t__interface_8h.html#a236092c58f51d674b952b3eb0f949313" title="This Function Initializes the TFT Display Driver." alt="" coords="61,5,160,32"/>
+<area shape="rect" id="node3" href="$_s_p_i__interface_8h.html#afe81a4e3007484e78e93ca7c5c81751a" title=" " alt="" coords="5,56,216,83"/>
+<area shape="rect" id="node4" href="$_s_p_i__interface_8h.html#a0d19931f89cc1598b485d16b1cec44c0" title=" " alt="" coords="9,107,212,133"/>
+<area shape="rect" id="node5" href="$_s_p_i__program_8c.html#a9bbd8c17ce4f49adcca47d11f482aab6" title=" " alt="" coords="49,157,172,184"/>
+</map>

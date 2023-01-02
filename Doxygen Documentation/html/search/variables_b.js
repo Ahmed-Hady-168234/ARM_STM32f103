@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['u32framedata_586',['u32FrameData',['../_i_r__private_8h.html#ab4e6df2fae9750192b82157a3c199fde',1,'IR_private.h']]],
-  ['u8edgecounter_587',['u8EdgeCounter',['../_i_r__private_8h.html#a5073e6ab6955059a5dc27eca722b1529',1,'IR_private.h']]],
-  ['u8startflag_588',['u8StartFlag',['../_i_r__private_8h.html#a1e8ef96c369b3e289c15682b80f6bb29',1,'IR_private.h']]],
-  ['userportpin_5fcol_589',['userPortPin_col',['../_l_e_d_m_r_x__program_8c.html#a53865121faadb17b7bcb5cc77e81d22c',1,'LEDMRX_program.c']]],
-  ['userportpin_5frow_590',['userPortPin_row',['../_l_e_d_m_r_x__program_8c.html#a806e435e930fd8b35c128a2b2179bb81',1,'LEDMRX_program.c']]]
+  ['sr_779',['SR',['../struct_s_p_i__t.html#a76c44aead49ab7b2ec8af4b882d6aadb',1,'SPI_t::SR()'],['../struct_m_u_s_a_r_t___type.html#a76c44aead49ab7b2ec8af4b882d6aadb',1,'MUSART_Type::SR()']]],
+  ['state_780',['state',['../struct_task.html#aebc38c74e1bb052cdefe524ef4806f2b',1,'Task']]],
+  ['swier_781',['SWIER',['../struct_e_x_t_i__t.html#a12e141793be86367f362208aa024c49b',1,'EXTI_t']]]
 ];

@@ -40,9 +40,10 @@ var _g_p_i_o__interface_8h =
     [ "OUTPUT_SPEED_50MHZ_AFPP", "_g_p_i_o__interface_8h.html#a697087d963fa4991ceaa605ac6a3def5", null ],
     [ "OUTPUT_SPEED_50MHZ_OD", "_g_p_i_o__interface_8h.html#a1b88ecb9eb2723cc6ddbe224247eb9c6", null ],
     [ "OUTPUT_SPEED_50MHZ_PP", "_g_p_i_o__interface_8h.html#a25061d7e4fa57f0ee7af09538917666a", null ],
-    [ "GPIO_voidGetPinValue", "_g_p_i_o__interface_8h.html#a78ab731791eb4c36606c4306b522cf6b", null ],
-    [ "GPIO_voidLockByPinNum", "_g_p_i_o__interface_8h.html#a08ad594bfffa33387bcac19a61ac6b14", null ],
-    [ "GPIO_voidLockByPortMask", "_g_p_i_o__interface_8h.html#a7bed1166b80b3fc3971f37d52fdd8d4e", null ],
-    [ "GPIO_voidSetPinDirection", "_g_p_i_o__interface_8h.html#a9ac056721c87163b4ff3bb2fe47b51bb", null ],
-    [ "GPIO_voidSetPinValue", "_g_p_i_o__interface_8h.html#ab58d8bf23c608c74a0b79a3bf12d3d78", null ]
+    [ "MGPIO_voidGetPinValue", "_g_p_i_o__interface_8h.html#aca613bbf7ec35cae087a29511fe881a2", null ],
+    [ "MGPIO_voidLockByPinNum", "_g_p_i_o__interface_8h.html#abd2bd404b9ef8ec8d8c867867888219e", null ],
+    [ "MGPIO_voidLockByPortMask", "_g_p_i_o__interface_8h.html#ab352c848d01d568565a19611fcad011d", null ],
+    [ "MGPIO_voidSetPinDirection", "_g_p_i_o__interface_8h.html#ae0481213e404b341d98935dae1d4606d", null ],
+    [ "MGPIO_voidSetPinValue", "_g_p_i_o__interface_8h.html#aa126d121ed7b6e7c845406531d0a3ce6", null ],
+    [ "MGPIO_voidSetPortValue", "_g_p_i_o__interface_8h.html#a6f1b883f4b39e5b60c4d728610354316", null ]
 ];

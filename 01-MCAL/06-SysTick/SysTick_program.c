@@ -42,7 +42,7 @@ void MSysTick_voidInit(void)
 /**
  * @brief This Function acts like function dealy(), it waits(Stucks) till the ticks finishes
  * 
- * @param Copy_u32Ticks Number Of Ticks To wait
+ * @param Copy_u32Ticks Number Of Ticks To wait in us
  * @pre You Should Call the MSysTick_voidInit() in first
  * @return <pre><b>
  *  SysTick_returnType... 

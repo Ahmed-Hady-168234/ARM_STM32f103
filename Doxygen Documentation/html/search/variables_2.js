@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['firstdealy_570',['firstDealy',['../struct_task.html#aa7c0f8b080c2a82ac13d1b2135818989',1,'Task']]],
-  ['ftsr_571',['FTSR',['../struct_e_x_t_i__t.html#add39f1b4b3868f40be17a18099f823c5',1,'EXTI_t']]]
+  ['dr_754',['DR',['../struct_s_p_i__t.html#a79204190a12dd9e7a6857471fc88e470',1,'SPI_t::DR()'],['../struct_m_u_s_a_r_t___type.html#a79204190a12dd9e7a6857471fc88e470',1,'MUSART_Type::DR()']]]
 ];

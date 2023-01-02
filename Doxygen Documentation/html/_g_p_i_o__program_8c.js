@@ -2,9 +2,10 @@ var _g_p_i_o__program_8c =
 [
     [ "CLR_PIN_MODE", "_g_p_i_o__program_8c.html#a2241eedea8415614cbafec8b97664e56", null ],
     [ "SET_PIN_MODE", "_g_p_i_o__program_8c.html#a610d389537a57648b865c9ab2fa38a23", null ],
-    [ "GPIO_voidGetPinValue", "_g_p_i_o__program_8c.html#a78ab731791eb4c36606c4306b522cf6b", null ],
-    [ "GPIO_voidLockByPinNum", "_g_p_i_o__program_8c.html#a08ad594bfffa33387bcac19a61ac6b14", null ],
-    [ "GPIO_voidLockByPortMask", "_g_p_i_o__program_8c.html#a7bed1166b80b3fc3971f37d52fdd8d4e", null ],
-    [ "GPIO_voidSetPinDirection", "_g_p_i_o__program_8c.html#a9ac056721c87163b4ff3bb2fe47b51bb", null ],
-    [ "GPIO_voidSetPinValue", "_g_p_i_o__program_8c.html#ab58d8bf23c608c74a0b79a3bf12d3d78", null ]
+    [ "MGPIO_voidGetPinValue", "_g_p_i_o__program_8c.html#aca613bbf7ec35cae087a29511fe881a2", null ],
+    [ "MGPIO_voidLockByPinNum", "_g_p_i_o__program_8c.html#abd2bd404b9ef8ec8d8c867867888219e", null ],
+    [ "MGPIO_voidLockByPortMask", "_g_p_i_o__program_8c.html#ab352c848d01d568565a19611fcad011d", null ],
+    [ "MGPIO_voidSetPinDirection", "_g_p_i_o__program_8c.html#ae0481213e404b341d98935dae1d4606d", null ],
+    [ "MGPIO_voidSetPinValue", "_g_p_i_o__program_8c.html#aa126d121ed7b6e7c845406531d0a3ce6", null ],
+    [ "MGPIO_voidSetPortValue", "_g_p_i_o__program_8c.html#a6f1b883f4b39e5b60c4d728610354316", null ]
 ];

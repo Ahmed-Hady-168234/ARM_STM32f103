@@ -19,6 +19,11 @@ void MSPI1_voidInit(void);
 void MSPI1_voidSendReceiveSynch(uint8 Copy_u8DataToTransmit, uint8 *Copy_u8DataToReceive);/*Synchronous   ... SPI is Full duplex ... transmit and receive at the same time*/
 void MSPI1_voidSendReceiveASynch(uint8 Copy_u8DataToTransmit, void (*CallBackFunction)(uint8));/*Asynchronous ... SPI is Full duplex ... transmit and receive at the same time*/
 
+/*To use This Driver you should 
+    Set Clock pin(usually it is A5) direction as output push pull
+    Set MISO  pin(usually it is A6) direction as INPUT Floating (if needed)
+    Set MOSI  pin(usually it is A7) direction as output push pull 
 
+*/
 
 #endif

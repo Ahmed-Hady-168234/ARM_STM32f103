@@ -1,12 +1,23 @@
 var searchData=
 [
-  ['u32framedata_452',['u32FrameData',['../_i_r__private_8h.html#ab4e6df2fae9750192b82157a3c199fde',1,'IR_private.h']]],
-  ['u8edgecounter_453',['u8EdgeCounter',['../_i_r__private_8h.html#a5073e6ab6955059a5dc27eca722b1529',1,'IR_private.h']]],
-  ['u8startflag_454',['u8StartFlag',['../_i_r__private_8h.html#a1e8ef96c369b3e289c15682b80f6bb29',1,'IR_private.h']]],
-  ['uint16_455',['uint16',['../_s_t_d___t_y_p_e_s_8h.html#a2e00abb078d312d1d8c4fbcd6be343d8',1,'STD_TYPES.h']]],
-  ['uint32_456',['uint32',['../_s_t_d___t_y_p_e_s_8h.html#a1134b580f8da4de94ca6b1de4d37975e',1,'STD_TYPES.h']]],
-  ['uint64_457',['uint64',['../_s_t_d___t_y_p_e_s_8h.html#a2834615d491c11fba337095447f25886',1,'STD_TYPES.h']]],
-  ['uint8_458',['uint8',['../_s_t_d___t_y_p_e_s_8h.html#adde6aaee8457bee49c2a92621fe22b79',1,'STD_TYPES.h']]],
-  ['userportpin_5fcol_459',['userPortPin_col',['../_l_e_d_m_r_x__program_8c.html#a53865121faadb17b7bcb5cc77e81d22c',1,'LEDMRX_program.c']]],
-  ['userportpin_5frow_460',['userPortPin_row',['../_l_e_d_m_r_x__program_8c.html#a806e435e930fd8b35c128a2b2179bb81',1,'LEDMRX_program.c']]]
+  ['task_567',['Task',['../struct_task.html',1,'']]],
+  ['task_5fdormant_568',['TASK_DORMANT',['../_o_s__interface_8h.html#a20aa241d2f70542dea7b618dcc3dbcbe',1,'OS_interface.h']]],
+  ['task_5fready_569',['TASK_READY',['../_o_s__interface_8h.html#a4b78a26b7a5f1543a2d0d5127fb0754a',1,'OS_interface.h']]],
+  ['task_5frunning_570',['TASK_RUNNING',['../_o_s__interface_8h.html#a17e3f99a030e5dfefb8f9815600e3fed',1,'OS_interface.h']]],
+  ['task_5fsuspended_571',['TASK_SUSPENDED',['../_o_s__interface_8h.html#ac90388d86d6cacd27fb13b218daff9ba',1,'OS_interface.h']]],
+  ['task_5fwaiting_572',['TASK_WAITING',['../_o_s__interface_8h.html#aa62d19f3e8e48cdbcd2259661c184fc3',1,'OS_interface.h']]],
+  ['taskhandler_573',['taskHandler',['../struct_task.html#a9497dd30eba10528e02f6583a30102a2',1,'Task']]],
+  ['taskstate_574',['TaskState',['../_o_s__interface_8h.html#adcf6891b8955fb7d668ec97c63379ff6',1,'OS_interface.h']]],
+  ['tft_5fa0_5fpin_575',['TFT_A0_PIN',['../_t_f_t__config_8h.html#ad925450b3942a35794aa456bba8b7336',1,'TFT_config.h']]],
+  ['tft_5fconfig_2eh_576',['TFT_config.h',['../_t_f_t__config_8h.html',1,'']]],
+  ['tft_5finterface_2eh_577',['TFT_interface.h',['../_t_f_t__interface_8h.html',1,'']]],
+  ['tft_5fprivate_2eh_578',['TFT_private.h',['../_t_f_t__private_8h.html',1,'']]],
+  ['tft_5fprogram_2ec_579',['TFT_program.c',['../_t_f_t__program_8c.html',1,'']]],
+  ['tft_5freset_5fpin_580',['TFT_RESET_PIN',['../_t_f_t__config_8h.html#a4b8bb455045b85f0ed53ed240983209a',1,'TFT_config.h']]],
+  ['tick_5ftime_5fin_5fus_581',['TICK_TIME_IN_US',['../_o_s__config_8h.html#a848920ca4aef7bec27362b7430b87b4e',1,'OS_config.h']]],
+  ['tog_5fbit_582',['TOG_BIT',['../_b_i_t___m_a_t_h_8h.html#aa80278f72c6dc750ee0694e15ce34a4e',1,'BIT_MATH.h']]],
+  ['true_583',['TRUE',['../_s_t_d___t_y_p_e_s_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d',1,'STD_TYPES.h']]],
+  ['txcrcr_584',['TXCRCR',['../struct_s_p_i__t.html#ae20cb265242a49fa413f08db7d687935',1,'SPI_t']]],
+  ['txdmaen_585',['TXDMAEN',['../_s_p_i__private_8h.html#a766ac644267e760407ac6d1cef887ce5',1,'SPI_private.h']]],
+  ['txeie_586',['TXEIE',['../_s_p_i__private_8h.html#a01a6ae416abff4627d084305e66faf57',1,'SPI_private.h']]]
 ];

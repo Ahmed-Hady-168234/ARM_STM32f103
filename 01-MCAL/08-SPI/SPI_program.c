@@ -21,7 +21,8 @@
 
 void MSPI1_voidInit(void)
 {
-	MSPI1 -> CR1 = 0x0347;
+    /*Clock Polarity = 1 / Clock Phase = 1 /Prescaller = Clk/2  /SPI Enable /MSB(Most Significant Bit) first*/
+    MSPI1 -> CR1 = 0x0347;
 }
 
 

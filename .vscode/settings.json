@@ -28,7 +28,10 @@
         "stp_config.h": "c",
         "stp_private.h": "c",
         "spi_config.h": "c",
-        "usart_private.h": "c"
+        "usart_private.h": "c",
+        "tft_interface.h": "c",
+        "tft_private.h": "c",
+        "tft_config.h": "c"
     },
     "cSpell.words": [
         "CALIB",
