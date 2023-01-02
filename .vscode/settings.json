@@ -11,7 +11,12 @@
         "exti_config.h": "c",
         "systick_private.h": "c",
         "systick_config.h": "c",
-        "systick_interface.h": "c"
+        "systick_interface.h": "c",
+        "rcc_interface.h": "c",
+        "ledmrx_interface.h": "c",
+        "rcc_private.h": "c",
+        "ledmrx_private.h": "c",
+        "rcc_config.h": "c"
     },
     "cSpell.words": [
         "CALIB",
