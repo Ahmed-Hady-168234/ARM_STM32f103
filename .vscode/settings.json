@@ -27,7 +27,8 @@
         "stp_interface.h": "c",
         "stp_config.h": "c",
         "stp_private.h": "c",
-        "spi_config.h": "c"
+        "spi_config.h": "c",
+        "usart_private.h": "c"
     },
     "cSpell.words": [
         "CALIB",

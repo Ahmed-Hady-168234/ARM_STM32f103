@@ -40,6 +40,6 @@
                                             APB2_CLOCK_DIV_128
                                             APB2_CLOCK_DIV_256
                                             */
-#define MSP1_CR1_BAUD_RATE  APB2_CLOCK_DIV_2  
+
 
 #endif

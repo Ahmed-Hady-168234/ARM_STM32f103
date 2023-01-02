@@ -15,20 +15,20 @@
 #include "SPI_private.h"
 #include "SPI_interface.h"
 #include "SPI_Config.h"
- 
+
 
 
 
 void MSPI1_voidInit(void)
 {
-
+	MSPI1 -> CR1 = 0x0347;
 }
 
 
 /*SPI is Full duplex ... transmit and receive at the same time*/
 void MSPI1_voidSendReceiveSynch(uint8 Copy_u8DataToTransmit, uint8 *Copy_u8DataToReceive)
 
-{ 
+{
     
     /*TODO make the driver supports more than 1 slave (take slave id as argument)*/
     /*Clear for slave select pin .... assume 1 slave*/
@@ -45,7 +45,7 @@ void MSPI1_voidSendReceiveSynch(uint8 Copy_u8DataToTransmit, uint8 *Copy_u8DataT
     }
     
     /*Return to the received data */
-    Copy_u8DataToReceive = MSPI1 -> DR;
+    *Copy_u8DataToReceive = MSPI1 -> DR;
 
     /*Set Slave Select Pin*/
     MGPIO_voidSetPinValue(MSPI1_SLAVE_PORT_PIN, GPIO_HIGH);

@@ -35,7 +35,7 @@ void (*Global_CallBackFunc)(uint8) ;
 #define     MSPI1    ((SPI_t *)0x40013000)
 
 /*SPI CR2 Register bits*/
-#define TXEIE       7 
+#define TXEIE       7
 #define RXNEIE      6
 #define ERRIE       5
 #define SSOE        2
